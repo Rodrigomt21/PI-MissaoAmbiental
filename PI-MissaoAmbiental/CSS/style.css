@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 .conteiner{
     position: relative;
-    width: 100%;
+    width: 500px;
+    padding-left: 730px;
+    top: 2rem;
 }
 .logo{
     position: absolute;
@@ -16,7 +20,9 @@
 }
 
 .logo img{
-padding-left: 70px;
+    padding-left: 70px;
+    width: 200px;
+
 }
 
 .conteiner img{
@@ -115,6 +121,10 @@ ul li.item-menu a .txt-link {
 
 .quem-somos{
     text-align: center;
-    background-color: yellowgreen;
-    border-radius: 25%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    padding-left: 259px;
+
 }
