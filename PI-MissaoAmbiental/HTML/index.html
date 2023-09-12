@@ -1,142 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PI-MissaoAmbiental</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
         <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style.css">
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
     </head>
     <body>
+
         <header>
-            <div class="logo">
-                <img src="/PI-MissaoAmbiental/images/logo.png" alt="">
-            </div>
             <div class="conteiner">
-                <img src="/PI-MissaoAmbiental/images/grama.webp" alt="">
-            </div>
 
-            <div class="escopo">
-                <h1>Missão Ambiental Ipiranga</h1>
+                <img
+                    src="/PI-MissaoAmbiental/images/folhas5.webp"
+                    class="img-fluid position-relative" width="100%">
 
-                <p>
-                    Agricultura urbana, horta comunitária, compostagem, abelhas nativas sem ferrão,
-                    captação de água de chuva, reciclagem, espécies nativas, oficinas de educação
-                    ambiental
-                </p>
+                <div class="row-md">
+                    <div
+                        class="col position-absolute top-50 start-50 translate-middle text-warning text-center">
+                        <h1>Missao ambiental</h1>
+
+                        <p>Agricultura urbana, horta comunitária, compostagem, abelhas nativas sem
+                            ferrão, captação de água de chuva, reciclagem, espécies nativas, oficinas de
+                            educação ambiental
+                        </p>
+                    </div>
+                </div>
             </div>
         </header>
-        <nav class="menu-lateral">
-            <div class="btn-expandir">
-                <i class="bi bi-list"></i>
-            </div>
 
-            <ul>
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Página Inicial</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Agroecologia</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Compostagem Comunitária</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Abelhas nativas sem ferrão</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Captação de água da chuva</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Materiais recicláveis</span>
-                    </a>
-                </li>
-
-                <li class="item-menu" id="especies">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="bi bi-caret-down-fill"></i>
-                        </span>
-                        <span class="txt-link">Espécies nativas</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Oficinas</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Voluntário</span>
-                    </a>
-                </li>
-
-                <li class="item-menu" id="interbairros">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="bi bi-caret-down-fill"></i>
-                        </span>
-                        <span class="txt-link">Projetos Interbairros</span>
-                    </a>
-                </li>
-
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="txt-link">Contato</span>
-                    </a>
-                </li>
-            </ul>
-
+        <nav class="navbar fixed-top bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark" navbar-expand">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="/PI-MissaoAmbiental/HTML/index.html"><img src="/PI-MissaoAmbiental/images/logo.png" width="100"></a>    
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Agendamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galeira</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </nav>
 
-        <main class="principal">
-            <article class="quem-somos">
-                <h2>Quem somos
-                    <a href="">
-                        <i class="bi bi-link"></i>
-                    </a>
-                </h2>
-
-                <p>
-                    A Missão Ambiental é uma associação civil sem fins lucrativos que cria espaços
-                    de preservação e convivência para a comunidade de vida na Terra buscando
-                    garantir a otimização dos recursos ambientais com produção de alimentos e
-                    regeneração do solo, incentiva a participação dos moradores do entorno e busca
-                    parceiros locais para realizar suas atividades . Além disso, conta com um amplo
-                    espaço cedido pela iniciativa privada onde são desenvolvidas atividades de
-                    educação ambiental, horta comunitária, agroecologia, viveiro de mudas nativas
-                    para as ações de plantios, mutirões (sempre agendados e divulgados nas redes
-                    sociais), cursos e oficinas. Tem um quadro de voluntários e parceiros como: SOS
-                    Abelhas sem Ferrão, Sempre Sustentável, Escola Comunitária, OHquidea, Aquário de
-                    São Paulo, ICC (Instituto Cristovão Colombo), FUNSAI (Fundação Nossa Senhora
-                    Auxiliadora do Ipiranga), CADES Ipiranga (Conselho Regional do Meio Ambiente,
-                    Desenvolvimento Sustentável e Cultura de Paz da Subprefeitura Ipiranga), Muda
-                    Ipiranga, entre outros.
-                </p>
-
-            </article>
-
+        <main>
+            <div class="row">
+                <div class="col-7 text-warning text-center"><h2>Quem somos</h2></div>
+            </div>
         </main>
 
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
     </body>
 </html>
