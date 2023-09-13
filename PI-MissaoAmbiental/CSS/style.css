@@ -5,20 +5,15 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
-body{
-  background-image: url(/PI-MissaoAmbiental/images/folhas6.jpeg);
+html{
   overflow-x: hidden;
+  height: 9000px;
 }
+
+
 h1{
   font-weight: 100;
 }
 li{
   font-size: large;
-}
-.card-header {
-  height:200px;
-  background-image:url('http://www.fillmurray.com/g/500/200');
-  background-size:cover;
-  background-position:center center;
 }
