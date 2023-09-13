@@ -11,3 +11,9 @@ h1{
 li{
   font-size: large;
 }
+.card-header {
+  height:200px;
+  background-image:url('http://www.fillmurray.com/g/500/200');
+  background-size:cover;
+  background-position:center center;
+}
