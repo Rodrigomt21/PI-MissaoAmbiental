@@ -10,7 +10,8 @@ html{
   height: 100%;
 }
 main{
-  background-color: gray;
+  background-color: white;
+  padding-bottom: 40px;
 }
 h1{
   font-weight: 100;
@@ -20,6 +21,7 @@ li{
 }
 footer{
   background-color: beige;
+  padding-top: 20px;
 }
 #insta{
   display: flex;
@@ -28,11 +30,34 @@ footer{
 #insta li{
   padding-left: 20px;
 }
+#insta{
+  padding-left: 0;
+  margin: 0;
+}
 #topo{
   display: flex;
 }
 .mapa, .suporte{
   list-style: none;
+}
+#zoom-img{
+  overflow: hidden;
+  border-radius: 16px;
+}
+#zoom-img img{
+  object-fit: cover;
+  transition: transform 0.8s;
+  height: 100%;
+}
+#zoom-img:hover img{
+  transform: scale(1.5);
+}
+.volta-topo{
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 10px;
 }
 
 

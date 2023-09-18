@@ -12,10 +12,10 @@
             crossorigin="anonymous">
     </head>
     <body>
-        <img src="/PI-MissaoAmbiental/images/folhas9.jpg" class="img-fluid">
+        <img src="/PI-MissaoAmbiental/images/folhas9.jpg" id="topo" class="img-fluid">
 
         <header>
-            <div class="col position-absolute top-50 start-50 translate-middle text-center">
+            <div class="col-6 position-absolute top-50 start-50 translate-middle text-center">
                 <h1 class="text-light">Missao ambiental</h1>
 
                 <p class="text-light">Agricultura urbana, horta comunitária, compostagem,
@@ -58,6 +58,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Galeria</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Doe aqui!</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -67,10 +71,9 @@
 <main>
 <article>
     <div class="row text-center">
-        <div class="col-5 mt-5 ms-5">
+        <div class="col-5 mt-5 ms-5" id="zoom-img">
             <img
-                src="/PI-MissaoAmbiental/images/agroecologia.jpg"
-                class="rounded-start border border-5 border border-dark">
+                src="/PI-MissaoAmbiental/images/agroecologia.jpg">
         </div>
         <div class="col-5 mt-5 ms-5" style="padding-top: 200px;">
             <h3>Agroecologia</h3>
@@ -79,7 +82,7 @@
                 produção de alimentos saudáveis, a conservação da biodiversidade e o respeito
                 pelos recursos naturais.</p>
         </div>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-5 mt-5 ms-5" style="padding-top: 200px;">
                 <h3>Compostagem</h3>
                 <p>A compostagem é um processo natural de decomposição de matéria orgânica,
@@ -89,9 +92,17 @@
                       de resíduos orgânicos, contribuindo para práticas ambientalmente sustentáveis.
                 </p>
             </div>
-            <div class="col-5 mt-5 ms-5" style="padding-left: 150px;">
-                <img src="/PI-MissaoAmbiental/images/agroecologia.jpg"
-                class="rounded-end border border-5 border border-dark">
+            <div class="col-5 mt-5 ms-5" id="zoom-img">
+                <img src="/PI-MissaoAmbiental/images/agroecologia.jpg">
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-5 mt-5 ms-5" id="zoom-img">
+                <img src="/PI-MissaoAmbiental/images/agroecologia.jpg">
+            </div>
+            <div class="col-5 mt-5 ms-5" style="padding-top: 200px;">
+                <h3>Captação de água da chuva</h3>
+                <p>A captação de água da chuva é uma prática ambientalmente responsável que consiste em coletar e armazenar a água que cai do céu durante as chuvas. Essa água pode ser utilizada para uma variedade de fins, como irrigação de jardins, descarga de vasos sanitários, lavagem de carros e até mesmo para o consumo humano, após devidos tratamentos.</p>
             </div>
         </div>
     </div>
@@ -134,23 +145,23 @@
             <h6>SIGA-NOS</h6>
             <ul id="insta">
                 <li>
-                    <a class="nav-link" href=""><i class="bi bi-instagram"></i></a>
+                    <a class="nav-link" href="https://www.instagram.com/missao.ambiental/"><i class="bi bi-instagram"></i></a>
                 </li>
 
                 <li>
-                    <a class="nav-link" href=""><i class="bi bi-facebook"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/missaoambiental.org"><i class="bi bi-facebook"></i></a>
                 </li>
             </ul>
         </div>
 
         <div id="topo" class="col-2">
-            <a class="nav-link" href=""><h6>VOLTAR AO TOPO</h6></a>
+            <button class="volta-topo" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
             <a class="nav-link" href=""><i class="bi bi-caret-up-fill"></i></a>
         </div>
 
     </div>
 
-    <p class="ms-5 text-dark">&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    <p class="ms-5 text-dark">&copy; 2023 Missão ambiental. Todos os direitos reservados.</p>
 
 </footer>
 
