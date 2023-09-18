@@ -11,7 +11,6 @@ html{
 }
 main{
   background-color: gray;
-  height: 2000px;
 }
 h1{
   font-weight: 100;
@@ -20,6 +19,21 @@ li{
   font-size: large;
 }
 footer{
-  background-color: black;
-  height: 500px;
+  background-color: beige;
 }
+#insta{
+  display: flex;
+  list-style: none;
+}
+#insta li{
+  padding-left: 20px;
+}
+#topo{
+  display: flex;
+}
+.mapa, .suporte{
+  list-style: none;
+}
+
+
+
