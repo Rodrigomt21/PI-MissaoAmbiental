@@ -50,6 +50,7 @@ ul.suporte{
 #zoom-img{
   overflow: hidden;
   border-radius: 16px;
+  height: 576px;
 }
 #zoom-img img{
   object-fit: cover;
