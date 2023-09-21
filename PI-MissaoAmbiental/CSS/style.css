@@ -10,13 +10,10 @@ html{
   height: 100%;
 }
 main{
-<<<<<<< HEAD
   background-color: gray;
   padding-bottom: 20px;
-=======
   background-color: white;
   padding-bottom: 40px;
->>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 }
 h1{
   font-weight: 100;
@@ -54,27 +51,22 @@ ul.suporte{
   list-style: none;
 }
 #zoom-img{
-<<<<<<< HEAD
   border-radius: 16px;
   overflow: hidden;
-=======
   overflow: hidden;
   border-radius: 16px;
   height: 576px;
->>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 }
 #zoom-img img{
   object-fit: cover;
   transition: transform 0.8s;
   height: 100%;
 }
-<<<<<<< HEAD
 
 #zoom-img:hover img{
   transform: scale(1.5);
 }
 
-=======
 #zoom-img:hover img{
   transform: scale(1.5);
 }
@@ -85,7 +77,6 @@ ul.suporte{
   padding: 0;
   height: 10px;
 }
->>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 
 
 
