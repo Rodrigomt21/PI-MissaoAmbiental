@@ -10,8 +10,13 @@ html{
   height: 100%;
 }
 main{
+<<<<<<< HEAD
   background-color: gray;
   padding-bottom: 20px;
+=======
+  background-color: white;
+  padding-bottom: 40px;
+>>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 }
 h1{
   font-weight: 100;
@@ -22,6 +27,7 @@ li{
 footer{
   padding-top: 20px;
   background-color: beige;
+  padding-top: 20px;
 }
 #insta{
   display: flex;
@@ -30,26 +36,56 @@ footer{
 #insta li{
   padding-left: 20px;
 }
+#insta{
+  padding-left: 0;
+  margin: 0;
+}
 #topo{
   display: flex;
+}
+ul.mapa{
+  padding: 0;
+}
+ul.suporte{
+  padding: 0;
+  padding-left: 50px;
 }
 .mapa, .suporte{
   list-style: none;
 }
 #zoom-img{
+<<<<<<< HEAD
   border-radius: 16px;
   overflow: hidden;
+=======
+  overflow: hidden;
+  border-radius: 16px;
+  height: 576px;
+>>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 }
 #zoom-img img{
   object-fit: cover;
   transition: transform 0.8s;
   height: 100%;
 }
+<<<<<<< HEAD
 
 #zoom-img:hover img{
   transform: scale(1.5);
 }
 
+=======
+#zoom-img:hover img{
+  transform: scale(1.5);
+}
+.volta-topo{
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 10px;
+}
+>>>>>>> 25368dcdf3c207e43c31e3008d67dc3ac108171f
 
 
 
