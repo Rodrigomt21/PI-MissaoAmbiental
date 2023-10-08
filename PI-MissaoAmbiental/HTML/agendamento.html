@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous">
+            <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style_agendamento.css">
+        </head>
+        <body>
+            <header>
+                <div class="row">
+                    <div
+                        class="col-6 position-absolute top-50 start-50 translate-middle text-center">
+                        
+    
+                        <p></p>
+                    </div>
+    
+                </div>
+            </header>
+    
+            <nav class="navbar fixed-top bg-body-tertiary navbar bg-dark border-bottom border-body">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid justify-content-center">
+                        <a class="navbar-brand" href="/PI-MissaoAmbiental/HTML/index.html"><img src="/PI-MissaoAmbiental/images/logo.png" width="150"></a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="/PI-MissaoAmbiental/HTML/index.html">
+                                        <span style="padding-right: 10px;">
+                                            <i class="bi bi-house-fill"></i>
+                                        </span>Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nossa-historia.html"></span>Nossa História</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="agendamento.html"></span>Agendamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doe aqui!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+<main>
+    <article class="calendario">
+        </div>
+        <div>
+            <div class="" style="padding-top: 150px;">
+                <h2  class="text-center" id="month-year">Outubro 2023</h2>
+                <div class="botoes">
+                    <button  id="prev-month">Mês Anterior</button>
+                    <button id="next-month">Próximo Mês</button>
+                </div>
+                <table>
+                    <tr>
+                        <th>Domingo</th>
+                        <th>Segunda-feira</th>
+                        <th>Terça-feira</th>
+                        <th>Quarta-feira</th>
+                        <th>Quinta-feira</th>
+                        <th>Sexta-feira</th>
+                        <th>Sábado</th>
+                    </tr>
+                    <tbody id="calendar-body">
+                    
+                </table>
+            
+                <script>
+                    function createCalendar(year, month) {
+                        const calendarBody = document.getElementById('calendar-body');
+                        calendarBody.innerHTML = '';
+                        
+                        const daysInMonth = new Date(year, month + 1, 0).getDate();
+            
+                        const firstDay = new Date(year, month, 1).getDay();
+            
+                        let date = 1;
+            
+                        for (let i = 0; i < 6; i++) {
+                            const row = document.createElement('tr');
+                            for (let j = 0; j < 7; j++) {
+                                if (i === 0 && j < firstDay) {
+                                    const cell = document.createElement('td');
+                                    row.appendChild(cell);
+                                } else if (date > daysInMonth) {
+                                    break;
+                                } else {
+                                    const cell = document.createElement('td');
+                                    cell.textContent = date;
+                                    row.appendChild(cell);
+                                    date++;
+                                }
+                            }
+                            calendarBody.appendChild(row);
+                        }
+            
+                        const monthYear = document.getElementById('month-year');
+                        const months = [
+                            'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+                            'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+                        ];
+                        monthYear.textContent = months[month] + ' ' + year;
+                    }
+            
+                    let currentYear = new Date().getFullYear();
+                    let currentMonth = new Date().getMonth();
+            
+                    createCalendar(currentYear, currentMonth);
+            
+                    document.getElementById('prev-month').addEventListener('click', function() {
+                        if (currentMonth === 0) {
+                            currentYear--;
+                            currentMonth = 11;
+                        } else {
+                            currentMonth--;
+                        }
+                        createCalendar(currentYear, currentMonth);
+                    });
+            
+                    document.getElementById('next-month').addEventListener('click', function() {
+                        if (currentMonth === 11) {
+                            currentYear++;
+                            currentMonth = 0;
+                        } else {
+                            currentMonth++;
+                        }
+                        createCalendar(currentYear, currentMonth);
+                    });
+                </script>
+    </article>
+
+
+<footer class="rodape">
+    <div class="row">
+        <div class="col-3 ms-5">
+            <h6>MAPA DO SITE ></h6>
+            <ul class="mapa">
+                
+                <li>
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="nossa-historia.html">Nossa História</a>
+                </li>
+    
+                <li>
+                    <a class="nav-link" href="agendamento.html">Agendamento</a>
+                </li>
+    
+                <li>
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="doacao.html">Doe aqui!</a>
+                </li>
+
+            </ul>
+        </div>
+    
+        <div class="col-3">
+            <h6>FALE CONOSCO</h6>
+            <ul class="suporte" id="insta">
+                <li>
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=51966776565"><i class="bi bi-whatsapp"></i></a>
+                </li>
+    
+                <li>
+                    <a
+                        class="nav-link"
+                        href="https://mail.google.com/mail/u/0/#inbox?compose=XBcJlCFxhkPJHpZzmLDDbwRmZdTzfnSwQHrfdxHRpdscrwMNDnvlDdzpRWrRPdGKsnzKsfTLkmzgZCNQ"><i class="bi bi-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="col-3">
+            <h6>REDES SOCIAIS</h6>
+            <ul id="insta">
+                <li>
+                    <a class="nav-link" href="https://www.instagram.com/missao.ambiental/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+    
+                <li>
+                    <a class="nav-link" href="https://www.facebook.com/missaoambiental.org">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div id="topo" class="col-2">
+            <button class="volta-topo" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
+            <a class="nav-link" href="">
+                <i class="bi bi-caret-up-fill"></i>
+            </a>
+        </div>
+    
+    </div>
+    
+    <p class="ms-5 text-dark">&copy; 2023 Missão ambiental. Todos os direitos reservados.</p>
+    
+</footer>
+    
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+
