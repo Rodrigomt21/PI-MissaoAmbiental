@@ -49,19 +49,19 @@ section img{
 article {
   max-width: max-content;
   max-height: max-content;
-  display: flex; /* Torna o conteúdo flexível */
+  display: flex;
   margin-top: 90px;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  position: relative; /* Define a posição como relativa para z-index funcionar */
-  z-index: 1; /* Define um z-index para estar acima do menu */
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+  z-index: 1; 
 }
 
 .text-overlay {
-  width: 100%; /* Use uma porcentagem para a largura em vez de um valor fixo */
-  max-width: 490px; /* Defina uma largura máxima para evitar que o elemento fique muito largo */
-  background-color: rgba(0, 0, 0, 0.8); /* Adicione um fundo semitransparente */
-  padding: 2%; /* Use porcentagem para o espaço interno em vez de um valor fixo */
+  width: 100%; 
+  max-width: 490px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 2%;
   border-radius: 20px;
   align-items: center;
 }
