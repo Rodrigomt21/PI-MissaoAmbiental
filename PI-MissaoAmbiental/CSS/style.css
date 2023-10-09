@@ -5,40 +5,87 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-html{
-  overflow-x: hidden;
-  height: 100%;
-}
+
 main{
-  background-color: gray;
-  padding-bottom: 20px;
-  background-color: white;
-  padding-bottom: 40px;
+  margin: 10px;
+  padding: 10px;
 }
-h1{
-  font-weight: 100;
+
+.conteudos {
+  padding: 10px;
+  margin: 10px;
 }
-li{
-  font-size: large;
+
+
+.conteudo {
+  margin: 10px;
+  padding: 10px;
 }
+
+.conteudo h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 10px;
+  padding: 10px;
+}
+
+.conteudo h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+}
+
+.conteudo p {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+section img{
+  align-items: center;
+}
+
+article {
+  max-width: max-content;
+  max-height: max-content;
+  display: flex; /* Torna o conteúdo flexível */
+  margin-top: 90px;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative; /* Define a posição como relativa para z-index funcionar */
+  z-index: 1; /* Define um z-index para estar acima do menu */
+}
+
+.text-overlay {
+  width: 100%; /* Use uma porcentagem para a largura em vez de um valor fixo */
+  max-width: 490px; /* Defina uma largura máxima para evitar que o elemento fique muito largo */
+  background-color: rgba(0, 0, 0, 0.8); /* Adicione um fundo semitransparente */
+  padding: 2%; /* Use porcentagem para o espaço interno em vez de um valor fixo */
+  border-radius: 20px;
+  align-items: center;
+}
+
 footer{
+  padding: 10px;
   padding-top: 20px;
   background-color: beige;
   padding-top: 20px;
 }
+
 #insta{
   display: flex;
   list-style: none;
-}
-#insta li{
-  padding-left: 20px;
-}
-#insta{
   padding-left: 0;
   margin: 0;
 }
+#insta li {
+  padding-left: 14px;
+}
+
 #topo{
   display: flex;
+
 }
 ul.mapa{
   padding: 0;
@@ -50,36 +97,27 @@ ul.suporte{
 .mapa, .suporte{
   list-style: none;
 }
-#zoom-img{
+
+.img-zoom {
   border-radius: 16px;
   overflow: hidden;
-  overflow: hidden;
-  border-radius: 16px;
-  height: 576px;
-}
-#zoom-img img{
-  object-fit: cover;
   transition: transform 0.8s;
   height: 100%;
 }
 
-#zoom-img:hover img{
-  transform: scale(1.5);
+.img-zoom:hover {
+  transform: scale(1.1);
 }
 
-#zoom-img:hover img{
-  transform: scale(1.5);
-}
 .volta-topo{
   background-color: transparent;
   border: 0;
   margin: 0;
   padding: 0;
-  height: 10px;
+  height: 50px;
 }
+
 #nossa-historia{
   border-radius: 50px;
   height: 100%;
 }
-
-
