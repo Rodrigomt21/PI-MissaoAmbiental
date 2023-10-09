@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+/* body {
+    margin: 10px;
+    padding: 10px;
+} */
+
+button {
+    margin: 10px;
+    display: flex;
+   
+}  
+
+.rodape{
+    margin-top: 100px;
+}
+.calendario{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
