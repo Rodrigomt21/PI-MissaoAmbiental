@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+*{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+main{
+margin: 10px;
+padding: 10px;
+}
+
+.conteudos {
+padding: 10px;
+margin: 10px;
+}
+
+.conteudo {
+margin: 10px;
+padding: 10px;
+}
+
+.conteudo h1 {
+font-size: 50px;
+line-height: 1.2;
+margin: 10px;
+padding: 10px;
+}
+
+.conteudo h3 {
+font-size: 40px;
+font-weight: 700;
+margin: 10px;
+padding: 10px;
+}
+
+.conteudo p {
+font-size: 20px;
+margin: 10px;
+padding: 10px;
+}
+
+section img{
+align-items: center;
+}
+
+article {
+max-width: max-content;
+max-height: max-content;
+display: flex;
+margin-top: 90px;
+justify-content: center; 
+align-items: center;
+position: relative; 
+z-index: 1; 
+}
+
+.text-overlay {
+width: 100%; 
+max-width: 490px;
+background-color: rgba(0, 0, 0, 0.8); 
+padding: 2%;
+border-radius: 20px;
+align-items: center;
+}
+
+footer{
+padding: 10px;
+padding-top: 20px;
+background-color: beige;
+padding-top: 20px;
+}
+
+#insta{
+display: flex;
+list-style: none;
+padding-left: 0;
+margin: 0;
+}
+#insta li {
+padding-left: 14px;
+}
+
+#topo{
+display: flex;
+
+}
+ul.mapa{
+padding: 0;
+}
+ul.suporte{
+padding: 0;
+padding-left: 50px;
+}
+.mapa, .suporte{
+list-style: none;
+}
+
+.img-zoom {
+border-radius: 16px;
+overflow: hidden;
+transition: transform 0.8s;
+height: 100%;
+}
+
+.img-zoom:hover {
+transform: scale(1.1);
+}
+
+.volta-topo{
+background-color: transparent;
+border: 0;
+margin: 0;
+padding: 0;
+height: 50px;
+}
+
+#nossa-historia{
+border-radius: 50px;
+height: 100%;
+}

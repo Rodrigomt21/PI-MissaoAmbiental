@@ -12,11 +12,15 @@ main{
   padding: 10px;
 }
 
+body {
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+}
+
 .conteudos {
   padding: 10px;
   margin: 10px;
 }
-
 
 .conteudo {
   margin: 10px;
@@ -55,7 +59,9 @@ article {
   justify-content: center; 
   align-items: center;
   position: relative; 
-  z-index: 1; 
+  z-index: 1;
+  background-color: #f5f5f5;
+ 
 }
 
 .text-overlay {
@@ -122,3 +128,5 @@ ul.suporte{
   border-radius: 50px;
   height: 100%;
 }
+
+/* CSS DO SITE  */
