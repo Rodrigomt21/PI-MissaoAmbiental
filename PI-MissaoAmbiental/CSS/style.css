@@ -80,6 +80,39 @@ footer{
   padding-top: 20px;
 }
 
+footer a{
+  transition: 1s; 
+}
+
+footer a:hover{
+  padding: 1px;
+  color: #13601d; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
+button{
+  transition: 0.5s; 
+}
+
+button:hover{
+  padding: 1px;
+  color: #07300c; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
+header a{
+  transition: 2s; 
+}
+
+header a:hover{
+  color: #072b0b; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
+
 #insta{
   display: flex;
   list-style: none;
