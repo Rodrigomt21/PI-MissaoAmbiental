@@ -4,59 +4,29 @@
 *{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
 
-h1{
-    font-family: 'Young Serif', serif;
+article{
+    height: 500px;
+    padding-top: 100px;
 }
-header{
-    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
-    height: 800px;
+main{
+  margin: 10px;
+  padding: 10px;
+}
+
+body {
+  background-image: url(/PI-MissaoAmbiental/images/Instagram\ post\ \ 27\ de\ setembro\ dia\ da\ doação\ de\ órgãos\ verde.png);
+  overflow-x: hidden;
 }
 footer{
     padding: 10px;
     padding-top: 20px;
     background-color: beige;
     padding-top: 20px;
-}
-#insta{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-  #insta li {
-    padding-left: 14px;
-}
+  }
   
-
-  
-
-  ul.mapa{
-    padding: 0;
-}
-  ul.suporte{
-    padding: 0;
-    padding-left: 50px;
-}
-  .mapa, .suporte{
-    list-style: none;
-}
-.botoes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.volta-topo{
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    height: 50px;
-}
-
-footer a{
+  footer a{
     transition: 1s; 
   }
   
@@ -66,7 +36,6 @@ footer a{
     font-weight: bolder;
     cursor: pointer; 
   }
-  
   button{
     transition: 0.5s; 
   }
@@ -88,3 +57,41 @@ footer a{
     cursor: pointer; 
   }
   
+  
+  #insta{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  #insta li {
+    padding-left: 14px;
+  }
+  
+  #topo{
+    display: flex;
+  
+  }
+  ul.mapa{
+    padding: 0;
+  }
+  ul.suporte{
+    padding: 0;
+    padding-left: 50px;
+  }
+  .mapa, .suporte{
+    list-style: none;
+  }
+  .volta-topo{
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+  }
+  #QR-code{
+    display: flex;
+    height: 150px;
+   
+  }
+   
