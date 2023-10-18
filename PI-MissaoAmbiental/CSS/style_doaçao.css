@@ -16,7 +16,7 @@ main{
 }
 
 body {
-  background-image: url(/PI-MissaoAmbiental/images/Instagram\ post\ \ 27\ de\ setembro\ dia\ da\ doação\ de\ órgãos\ verde.png);
+  background-image: url(/PI-MissaoAmbiental/planta/teste/doacao.png);
   overflow-x: hidden;
 }
 footer{
@@ -89,9 +89,9 @@ footer{
     padding: 0;
     height: 50px;
   }
-  #QR-code{
+  #Planta{
     display: flex;
-    height: 150px;
+    height: 420px;
    
   }
    
