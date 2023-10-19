@@ -35,48 +35,10 @@ main {
 }
 
 footer{
-padding: 10px;
-padding-top: 20px;
-background-color: beige;
-padding-top: 20px;
-}
-
-#insta{
-display: flex;
-list-style: none;
-padding-left: 0;
-margin: 0;
-}
-
-#insta li {
-padding-left: 14px;
-}
-
-#topo{
-display: flex;
-}
-ul.mapa{
-padding: 0;
-}
-ul.suporte{
-padding: 0;
-padding-left: 50px;
-}
-.mapa, .suporte{
-list-style: none;
-}
-
-.volta-topo{
-background-color: transparent;
-border: 0;
-margin: 0;
-padding: 0;
-height: 50px;
-}
-
-#nossa-historia{
-border-radius: 50px;
-height: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: beige;
+  padding-top: 20px;
 }
 
 footer a{
@@ -101,7 +63,6 @@ button:hover{
   cursor: pointer; 
 }
 
-
 header a{
   transition: 2s; 
 }
@@ -110,4 +71,54 @@ header a:hover{
   color: #072b0b; 
   font-weight: bolder;
   cursor: pointer; 
+}
+
+
+#insta{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+#insta li {
+  padding-left: 14px;
+}
+
+#topo{
+  display: flex;
+
+}
+ul.mapa{
+  padding: 0;
+}
+ul.suporte{
+  padding: 0;
+  padding-left: 50px;
+}
+.mapa, .suporte{
+  list-style: none;
+}
+
+.img-zoom {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.8s;
+  height: 100%;
+}
+
+.img-zoom:hover {
+  transform: scale(1.1);
+}
+
+.volta-topo{
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+#nossa-historia{
+  border-radius: 50px;
+  height: 100%;
 }
