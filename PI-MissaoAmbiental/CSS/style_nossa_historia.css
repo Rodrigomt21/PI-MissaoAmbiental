@@ -111,11 +111,3 @@ header a:hover{
   font-weight: bolder;
   cursor: pointer; 
 }
-
-footer a:hover, button:hover {
-  padding: 3px; /* Você pode ajustar esse valor conforme necessário */
-}
-
-.volta-topo, .nav-link[aria-current="page"] {
-  text-align: center;
-}
