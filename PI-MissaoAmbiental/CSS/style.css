@@ -51,8 +51,6 @@ section img{
   align-items: center;
 }
 
-
-
 article {
   max-width: max-content;
   max-height: max-content;
@@ -163,5 +161,3 @@ ul.suporte{
   border-radius: 50px;
   height: 100%;
 }
-
-/* CSS DO SITE  */
