@@ -91,7 +91,9 @@ footer{
   }
   #Planta{
     display: flex;
-    height: 420px;
+    height: 100px;
+    /* object-position: 100px; */
+
    
   }
    
