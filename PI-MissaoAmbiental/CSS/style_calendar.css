@@ -29,14 +29,15 @@ html{
   border: none;
   outline: none;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: rgb(0, 0, 0);
+  background-color: #f3f3f3;
 }
 
 #header {
   padding: 10px;
   color: var(--header-color) ;
-  font-size: 26px;
+  font-size: 20px;
   font-family: sans-serif;
   display: flex;
   justify-content: space-between;
@@ -48,12 +49,11 @@ html{
   width: 770px;
 }
 #weekdays {
-  width: 1000px;
   display: flex;
   color: var(--color-weekdays) ;
 }
 #weekdays div {
-  width: 100px;
+  width: 200px;
   padding: 10px;
 }
 #calendar {
