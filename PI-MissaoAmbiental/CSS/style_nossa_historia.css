@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 *{
-  font-family: 'Young Serif', serif;
+  
+  
   scroll-behavior: smooth;
 }
 
@@ -18,6 +19,7 @@ main {
   margin: 10px;
   padding: 10px;
   padding-top: 80px;
+  font-family: 'Young Serif', serif;
 }
 
 .conteudos, .conteudos h2, .conteudos p {
@@ -39,6 +41,8 @@ footer{
   padding-top: 20px;
   background-color: beige;
   padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 footer a{
