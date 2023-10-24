@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Missão Ambiental</title>
-        <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style.css">
         <link
             rel="shortcut icon"
             href="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/308345287_400257078952813_8226305583465141579_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Yx6_-htOnlEAX9ePjfh&_nc_ht=scontent-gru2-2.xx&oh=00_AfC0aRKexPh084HFQ2tnVonhTXG1LDd0giKjd8V_SCSTTw&oe=65341121"
@@ -14,177 +13,153 @@
             rel="stylesheet"
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
             crossorigin="anonymous">
-
+        <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style_agendamento.css">
         <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/darkMode.css">
         <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style_calendar.css">
 
     </head>
+
     <body>
         <header id="topo">
-            <div class="row">
-                <div
-                    class="col-6 position-absolute top-50 start-50 translate-middle text-center">
-
-                    <p></p>
-                </div>
-
-            </div>
-
-            <nav
-                class="navbar fixed-top bg-body-tertiary navbar bg-dark border-bottom border-body">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid justify-content-center">
-                        <a class="navbar-brand" href="/PI-MissaoAmbiental/HTML/index.html"><img src="/PI-MissaoAmbiental/images/logo.png" width="150"></a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav"
-                            aria-controls="navbarNav"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link active"
-                                        aria-current="page"
-                                        href="/PI-MissaoAmbiental/HTML/index.html">
-                                        <span style="padding-right: 10px;">
-                                            <i class="bi bi-house-fill"></i>
-                                        </span>Home</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="nossa-historia.html"></span>Nossa História</a>
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <div class="container-fluid justify-content-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/PI-MissaoAmbiental/images/logo.png" width="150"></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/PI-MissaoAmbiental/HTML/index.html">
+                                    <span style="padding-right: 10px;">
+                                        <i class="bi bi-house-fill"></i>
+                                    </span>Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="agendamento.html"></span>Agendamento</a>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/nossa-historia.html"></span>Nossa História</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="galeria.html">Galeria</a>
-                        </li>
+                            <a class="nav-link" href="/PI-MissaoAmbiental/HTML/agendamento.html"></span>Agendamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/galeria.html">Galeria</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="doacao.html">Doe aqui!</a>
-                        </li>
-                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/doacao.html">Doe aqui!</a>
+                    </li>
                 </div>
-            </div>
+            </nav>
         </nav>
-    </nav>
-    <main></header>
+    </header>
 
-    <article padding:="padding:" 10px;="10px;">
-        <div>
+    <main style="padding-top: 90px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+        <div class="text-center" style="padding: 10px; margin: 10px; align-items: center; justify-content: center;">
             <h3>CALENDÁRIO</h3>
         </div>
-    </article>
 
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <article id="center" class="row text-center">
-            <div id="container">
-                <div id="header">
-                    <div id="monthDisplay"></div>
+        <div style="display: flex; align-items: center; justify-content: center; border: 10px solid black; padding-right: 100px;">
+            <article id="center" class=" text-center">
+                <div id="container">
+                    <div id="header">
+                        <div id="monthDisplay"></div>
+                        <div class="buttonmes">
+                            <button id="backButton" style="background-color: white;">Mês anterior</button>
+                            <button id="nextButton" style="background-color: white;">Próximo mês</button>
+                        </div>
 
-                    <div class="buttonmes">
-                        <button id="backButton">Mês anterior</button>
-                        <button id="nextButton">Próximo mês</button>
                     </div>
 
+                    <div id="weekdays">
+                        <div>Domingo</div>
+                        <div>Segunda-feira</div>
+                        <div>Terça-feira</div>
+                        <div>Quarta-feira</div>
+                        <div>Quinta-feira</div>
+                        <div>Sexta-feira</div>
+                        <div>Sábado</div>
+                    </div>
+
+                    <div id="calendar"></div>
+
                 </div>
 
-                <div id="weekdays">
-                    <div>Domingo</div>
-                    <div>Segunda-feira</div>
-                    <div>Terça-feira</div>
-                    <div>Quarta-feira</div>
-                    <div>Quinta-feira</div>
-                    <div>Sexta-feira</div>
-                    <div>Sábado</div>
+                <div id="newEventModal">
+                    <h2>Novo Evento</h2>
+
+                    <input id="eventTitleInput" placeholder="Event Title"/>
+
+                    <button id="saveButton">
+                        Salvar</button>
+                    <button id="cancelButton">Cancelar</button>
                 </div>
 
-                <div id="calendar"></div>
+                <div id="deleteEventModal">
+                    <h2>Evento</h2>
 
-            </div>
+                    <div id="eventText"></div><br>
 
-            <div id="newEventModal">
-                <h2>Novo Evento</h2>
+                    <button id="deleteButton">Deletar</button>
+                    <button id="closeButton">Fechar</button>
+                </div>
 
-                <input id="eventTitleInput" placeholder="Event Title"/>
+                <div id="modalBackDrop"></div>
 
-                <button id="saveButton">
-                    Salvar</button>
-                <button id="cancelButton">Cancelar</button>
-            </div>
+                <script src="/PI-MissaoAmbiental/scripts/darkMode.js"></script>
+                <script src="/PI-MissaoAmbiental/scripts/main.js"></script>
 
-            <div id="deleteEventModal">
-                <h2>Evento</h2>
-
-                <div id="eventText"></div><br>
-
-                <button id="deleteButton">Deletar</button>
-                <button id="closeButton">Fechar</button>
-            </div>
-
-            <div id="modalBackDrop"></div>
-
-            <script src="/PI-MissaoAmbiental/scripts/darkMode.js"></script>
-            <script src="/PI-MissaoAmbiental/scripts/main.js"></script>
-
-        </article>
-    </div>
-
-    <article padding:="padding:" 10px;="10px;">
-        <h3>
-            COMO CHEGAR
-        </h3>
-
-    </article>
-
-    <p>Para nos visitar basta clicar no mapa e seguir viagem para conhecer um pouco
-        das nossas instalções</p>
-
-    <article>
-        <div>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.342696184892!2d-46.61611878952118!3d-23.592039562630585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b36975b7625%3A0x69aeac37903cc961!2sMISS%C3%83O%20AMBIENTAL%20-%20PORTARIA%2001!5e0!3m2!1spt-BR!2sbr!4v1697316203530!5m2!1spt-BR!2sbr"
-                width="1350"
-                height="400"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
         </div>
-    </article>
 
-    <footer class="rodape">
+        <article class="row" style="padding: 10px; margin: 20px;">
+            <div class="col-lg text-center">
+                <h3>COMO CHEGAR</h3>
+                <p>Para nos visitar basta clicar no mapa e seguir viagem para conhecer um pouco
+                    das nossas instalações</p>
+            </div>
+            <div class="text-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.342696184892!2d-46.61611878952118!3d-23.592039562630585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b36975b7625%3A0x69aeac37903cc961!2sMISS%C3%83O%20AMBIENTAL%20-%20PORTARIA%2001!5e0!3m2!1spt-BR!2sbr!4v1697316203530!5m2!1spt-BR!2sbr"
+                    width="900"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer>
         <div class="row">
             <div class="col-3 ms-5">
                 <h6>MAPA DO SITE ></h6>
                 <ul class="mapa">
-
                     <li>
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/index.html">Home</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="nossa-historia.html">Nossa História</a>
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/nossa-historia.html">Nossa História</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="agendamento.html">Agendamento</a>
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/agendamento.html">Agendamento</a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/galeria.html">Galeria</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="doacao.html">Doe aqui!</a>
+                        <a class="nav-link" href="/PI-MissaoAmbiental/HTML/doacao.html">Doe aqui!</a>
                     </li>
 
                 </ul>
@@ -194,7 +169,10 @@
                 <h6>FALE CONOSCO</h6>
                 <ul class="suporte" id="insta">
                     <li>
-                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=51966776565">
+                        <a
+                            class="nav-link"
+                            href="https://api.whatsapp.com/send?phone=51966776565"
+                            target="_blank">
                             <i class="bi bi-whatsapp"></i>
                         </a>
                     </li>
@@ -210,38 +188,42 @@
             </div>
 
             <div class="col-3">
-                <h6>REDES SOCIAIS</h6>
+                <h6>SIGA-NOS</h6>
                 <ul id="insta">
                     <li>
-                        <a class="nav-link" href="https://www.instagram.com/missao.ambiental/">
+                        <a
+                            class="nav-link"
+                            href="https://www.instagram.com/missao.ambiental/"
+                            target="_blank">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a class="nav-link" href="https://www.facebook.com/missaoambiental.org">
+                        <a
+                            class="nav-link"
+                            href="https://www.facebook.com/missaoambiental.org"
+                            target="_blank">
                             <i class="bi bi-facebook"></i>
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-2" style="display: flex;">
+            <div class="col-lg-2 ms-5" style="display: flex;">
                 <button class="volta-topo" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
-                <a class="nav-link" style="padding-top: 12px;" href="#topo">
+                <a class="nav-link" href="#topo">
                     <i class="bi bi-caret-up-fill"></i>
                 </a>
             </div>
 
         </div>
-
         <p class="ms-5 text-dark">&copy; 2023 Missão ambiental. Todos os direitos reservados.</p>
-
     </footer>
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
 </html>
