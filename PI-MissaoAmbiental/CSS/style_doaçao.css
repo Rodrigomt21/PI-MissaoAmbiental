@@ -8,26 +8,41 @@
 
 main{
   margin-top: 90px;
-  padding: 10px;
   font-family: 'Young Serif', serif;
+  background-color: #082520;
+  border-radius: 10px;
+}
 
+.borda {
+  flex: 1;
+  padding: 20px; 
+  border-radius: 25px;
 }
 
 body {
   overflow-x: hidden;
 }
 
-
 .conteudo {
-  margin: 10px;
-  padding: 10px;
+  display: flex;
 }
 
+.imagem {
+  flex: 1;
+  background-image: url('/PI-MissaoAmbiental/images/plantas_fundo_nossa_hist.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .conteudo h3 {
   font-size: 40px;
   font-weight: 700;
   margin: 10px;
   padding: 10px;
+  color: rgb(255, 255, 255);
 }
 
 .conteudo p {
@@ -35,6 +50,8 @@ body {
   margin: 10px;
   padding: 10px;
   font-family: 'Poppins';
+  color: rgb(255, 255, 255);
+
 }
 
 footer{
