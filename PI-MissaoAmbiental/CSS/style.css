@@ -161,3 +161,39 @@ ul.suporte{
   border-radius: 50px;
   height: 100%;
 }
+.seletor{
+  list-style: none;
+  display: flex;
+  padding-top: 75px;
+}
+.seletor li{
+  padding-left: 125px;
+}
+.seletor button:hover{
+  background-color: greenyellow;
+}
+.seletor button{
+  border-radius: 25%;
+  height: 50px;
+  transition: 0.5s;
+  background-color: violet;
+}
+#especies-nativas{
+  text-align: center;
+}
+#nativas{
+  display: flex;
+  padding-top: 20px;
+}
+#nativas-i{
+  padding-left: 20px;
+  text-align: left;
+}
+#nativas img{
+  height: 273.13px;
+  width: 273.13px;
+}
+.seletor span{
+  display: block;
+  text-align: center;
+}
