@@ -167,7 +167,7 @@ ul.suporte{
   padding-top: 75px;
 }
 .seletor li{
-  padding-left: 125px;
+  padding-left: 200px;
 }
 .seletor button:hover{
   background-color: greenyellow;
@@ -195,4 +195,7 @@ ul.suporte{
 .seletor span{
   display: block;
   text-align: center;
+}
+#compostagem{
+  align-items: center;
 }
