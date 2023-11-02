@@ -9,7 +9,6 @@
 main{
   padding-top: 90px;
   font-family: 'Young Serif', serif;
-  
 }
 
 body {
@@ -40,10 +39,9 @@ header a:hover{
   cursor: pointer; 
 }
 footer{
-  padding: 30px;
+  padding: 10px;
   background-color: beige;
   font-family: 'Poppins', sans-serif;
-  margin-top: 10px;
 }
   
 footer a{
