@@ -4,22 +4,96 @@
 *{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
 
 h1{
     font-family: 'Young Serif', serif;
 }
-header{
+
+
+
+main{
     background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
-    height: 800px;
+    height: 700px;
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;   
 }
+
+
+header a{
+   transition: 2s;  
+}
+
+header a:hover{
+  color: #072b0b; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
+
+#texto{
+ margin-left: 150px;
+ margin-top: 250px; 
+ width: 400px;
+ height:325px;
+ position: absolute;
+ text-align: left;
+ background-color: rgba(245, 245, 245, 0.727);
+ border-radius: 20px;
+ padding: 20px;
+ border-top-left-radius: 0;
+}
+
+#carouselExampleIndicators{
+   margin-left: 700px;
+   width: 550px; 
+   padding-top: 120px;
+   margin-top: 30px;
+}
+
+.carousel-control-prev{
+  margin-top: 115px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 115px;
+}
+
+
 footer{
     padding: 10px;
     padding-top: 20px;
     background-color: beige;
     padding-top: 20px;
+    bottom: 0;
+    width: 100%;
 }
+
+footer a{
+  transition: 1s; 
+}
+
+footer a:hover{
+  padding: 1px;
+  color: #13601d; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
+button{
+  transition: 0.5s; 
+}
+
+button:hover{
+  padding: 1px;
+  color: #07300c; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
 #insta{
     display: flex;
     list-style: none;
@@ -29,10 +103,6 @@ footer{
   #insta li {
     padding-left: 14px;
 }
-  
-
-  
-
   ul.mapa{
     padding: 0;
 }
@@ -56,35 +126,296 @@ footer{
     height: 50px;
 }
 
-footer a{
-    transition: 1s; 
-  }
+
+
+/* Estilos específicos para dispositivos de largura pequena, como smartphones em modo retrato */
+@media (max-width: 767px) {
+
+
+  html, body {
+    overflow-x: hidden;
+}
+
+  main{
+    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
+    height: 135vh;
+    width: 550px;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+footer{
+  height: 55vh;
+  width: 425px;
+}
+
+
   
-  footer a:hover{
-    padding: 1px;
-    color: #13601d; 
-    font-weight: bolder;
-    cursor: pointer; 
+  #texto{
+    margin-left: 20px;
+    margin-top: 150px; 
+    width: 350px;
+    height:380px;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.727);
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
   }
+
   
-  button{
-    transition: 0.5s; 
+#carouselExampleIndicators{
+  margin-left: 25px;
+  width: 340px; 
+  padding-top: 556px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+.carousel-control-prev{
+  margin-top: 556px;
+  margin-bottom: 0px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 556px;
+  margin-bottom: 0px;
+}
+
+
+
+}
+
+
+@media (min-width: 375px) and (max-width: 667px) {
+  
+  html, body {
+    overflow-x: hidden;
+}
+
+  main{
+    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
+    height: 150vh;
+    width: 550px;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+footer{
+  height: 60vh;
+  width: 425px;
+}
+
+
+  
+  #texto{
+    margin-left: 36px;
+    margin-top: 150px; 
+    width: 300px;
+    height:400px;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.727);
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
   }
+
   
-  button:hover{
-    padding: 1px;
-    color: #07300c; 
-    font-weight: bolder;
-    cursor: pointer; 
+#carouselExampleIndicators{
+  margin-left: 15px;
+  width: 340px; 
+  padding-top: 556px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+.carousel-control-prev{
+  margin-top: 556px;
+  margin-bottom: 0px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 556px;
+  margin-bottom: 0px;
+}
+
+}
+
+
+@media (min-width: 912px) and (max-width: 1040px) {
+  
+  html, body {
+    overflow-x: hidden;
+}
+
+  main{
+    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
+    height: 40vh;
+    width: 920px;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+footer{
+  height: 25vh;
+  width: 920px;
+}
+  
+  #texto{
+    margin-left: 180px;
+    margin-top: 150px; 
+    width: 500px;
+    height:300px;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.727);
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
   }
+
   
-  header a{
-    transition: 2s; 
+#carouselExampleIndicators{
+  margin-left: 180px;
+  width: 500px; 
+  padding-top: 460px;
+  margin-bottom: 50px;
+  position: absolute;
+}
+
+.carousel-control-prev{
+  margin-top: 450px;
+  margin-bottom: 0px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 450px;
+  margin-bottom: 0px;
+}
+
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+
+  html, body {
+    overflow-x: hidden;
+}
+
+  main{
+    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
+    height: 79vh;
+    width: 920px;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+footer{
+  height: 28vh;
+  width: 920px;
+}
+  
+  #texto{
+    margin-left: 30px;
+    margin-top: 150px; 
+    width: 750px;
+    height:200px;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.727);
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
   }
+
   
-  header a:hover{
-    color: #072b0b; 
-    font-weight: bolder;
-    cursor: pointer; 
+#carouselExampleIndicators{
+  margin-left: 150px;
+  width: 500px; 
+  padding-top: 350px;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+.carousel-control-prev{
+  margin-top: 350px;
+  margin-bottom: 0px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 350px;
+  margin-bottom: 0px;
+}
+
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+  html, body {
+    overflow-x: hidden;
+}
+
+  main{
+    background-image: url(/PI-MissaoAmbiental/images/images_galeria/Green\ and\ white\ Sustainability\ modern\ presentation.png);
+    height: 170vh;
+    width: 1050px;
+    background-size: cover;
+    background-attachment: fixed; 
+    
+}
+
+footer{
+  height: 35vh;
+  width: 1050px;
+}
+  
+  #texto{
+    margin-left: 140px;
+    margin-top: 170px; 
+    width: 750px;
+    height:210px;
+    position: absolute;
+    text-align: left;
+    background-color: rgba(245, 245, 245, 0.727);
+    border-radius: 20px;
+    padding: 20px;
+    border-top-left-radius: 0;
   }
+
   
+#carouselExampleIndicators{
+  margin-left: 250px;
+  width: 500px; 
+  padding-top: 400px;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+.carousel-control-prev{
+  margin-top: 350px;
+  margin-bottom: 0px;
+  
+}
+
+.carousel-control-next{
+  margin-top: 350px;
+  margin-bottom: 0px;
+}
+
+}
+
+
+
+
+
+
