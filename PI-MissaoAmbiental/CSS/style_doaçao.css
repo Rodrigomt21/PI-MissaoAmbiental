@@ -14,7 +14,7 @@ main{
 
 body {
   overflow-x: hidden;
-  background: url(/PI-MissaoAmbiental/images/composicao-de-elementos-de-estilo-de-vida-sustentavel-de-naturezas-mortas\ \(1\).jpg);
+  background: url(/PI-MissaoAmbiental/images/FUNDO.DOAÇÃO.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -63,7 +63,7 @@ header a:hover{
 }
 
 footer{
-  padding: 25px;
+  padding: 30px;
   background-color: beige;
   font-family: 'Poppins', sans-serif;
   margin-top: 10px;

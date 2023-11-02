@@ -3,57 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 *{
-  
-  
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: url(/PI-MissaoAmbiental/images/plantas_fundo_nossa_hist.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-
-main {
-  margin: 10px;
-  padding: 10px;
-  padding-top: 80px;
+main{
+  padding-top: 90px;
   font-family: 'Young Serif', serif;
-}
-
-.conteudos, .conteudos h2, .conteudos p {
-  padding: 10px;
-  margin: 10px;
-  color: #f5f5f5;
-}
-
-.conteudos h2 {
-  font-size: 40px;
-}
-
-.conteudos p {
-  font-size: 15px; 
-}
-
-footer{
-  padding: 10px;
-  padding-top: 20px;
-  background-color: beige;
-  padding-top: 20px;
-  font-family: 'Poppins', sans-serif;
   
 }
 
-footer a{
-  transition: 1s; 
-}
-
-footer a:hover{
-  padding: 1px;
-  color: #13601d; 
-  font-weight: bolder;
-  cursor: pointer; 
+body {
+  overflow-x: hidden;
+  background: url(/PI-MissaoAmbiental/images/Luz-meio-ambiente.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button{
@@ -76,42 +39,50 @@ header a:hover{
   font-weight: bolder;
   cursor: pointer; 
 }
+footer{
+  padding: 30px;
+  background-color: beige;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+  
+footer a{
+  transition: 1s; 
+}
+  
+footer a:hover{
+  Padding: 1px;
+  color: #13601d; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
 
+ul.suporte, ul.redes_sociais{
+  margin-right: 0px;
+  padding-left: 0px;
+}
 
-#insta{
+.suporte {
+  list-style: none;
+  align-items: center;
+}
+
+.suporte .nav-link {
+  margin-right: 10px; 
+}
+
+.redes_sociais .nav-link{
+  margin-left: 15px;
+}
+
+.mapa_nav{
+  list-style: none;
+  padding: 0px;
+}
+
+.redes_sociais{
   display: flex;
   list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-#insta li {
-  padding-left: 14px;
-}
-
-#topo{
-  display: flex;
-
-}
-ul.mapa{
-  padding: 0;
-}
-ul.suporte{
-  padding: 0;
-  padding-left: 50px;
-}
-.mapa, .suporte{
-  list-style: none;
-}
-
-.img-zoom {
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.8s;
-  height: 100%;
-}
-
-.img-zoom:hover {
-  transform: scale(1.1);
 }
 
 .volta-topo{
@@ -120,9 +91,4 @@ ul.suporte{
   margin: 0;
   padding: 0;
   height: 50px;
-}
-
-#nossa-historia{
-  border-radius: 50px;
-  height: 100%;
 }
