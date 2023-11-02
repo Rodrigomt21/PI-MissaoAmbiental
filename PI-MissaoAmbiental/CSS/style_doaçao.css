@@ -7,42 +7,29 @@
 }
 
 main{
-  margin-top: 90px;
+  padding-top: 90px;
   font-family: 'Young Serif', serif;
-  background-color: #082520;
   border-radius: 10px;
-}
-
-.borda {
-  flex: 1;
-  padding: 20px; 
-  border-radius: 25px;
 }
 
 body {
   overflow-x: hidden;
-}
-
-.conteudo {
-  display: flex;
-}
-
-.imagem {
-  flex: 1;
-  background-image: url('/PI-MissaoAmbiental/images/plantas_fundo_nossa_hist.jpg');
+  background: url(/PI-MissaoAmbiental/images/composicao-de-elementos-de-estilo-de-vida-sustentavel-de-naturezas-mortas\ \(1\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-attachment: fixed;
 }
+
+.conteudo{
+  text-align: center;
+}
+
 .conteudo h3 {
   font-size: 40px;
   font-weight: 700;
   margin: 10px;
   padding: 10px;
-  color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .conteudo p {
@@ -50,28 +37,9 @@ body {
   margin: 10px;
   padding: 10px;
   font-family: 'Poppins';
-  color: rgb(255, 255, 255);
-
+  color: #000000;
 }
 
-footer{
-  padding: 10px;
-  padding-top: 20px;
-  background-color: beige;
-  padding-top: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-  
-footer a{
-  transition: 1s; 
-}
-  
-footer a:hover{
-  Padding: 1px;
-  color: #13601d; 
-  font-weight: bolder;
-  cursor: pointer; 
-}
 
 button{
   transition: 0.5s; 
@@ -94,31 +62,49 @@ header a:hover{
   cursor: pointer; 
 }
 
-#insta{
-  display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-#insta li {
-  padding-left: 14px;
+footer{
+  padding: 25px;
+  background-color: beige;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
 }
   
-#topo{
-  display: flex;  
+footer a{
+  transition: 1s; 
+}
+  
+footer a:hover{
+  Padding: 1px;
+  color: #13601d; 
+  font-weight: bolder;
+  cursor: pointer; 
 }
 
-ul.mapa{
-  padding: 0;
+ul.suporte, ul.redes_sociais{
+  margin-right: 0px;
+  padding-left: 0px;
 }
 
-ul.suporte{
-  padding: 0;
-  padding-left: 50px;
+.suporte {
+  list-style: none;
+  align-items: center;
 }
 
-.mapa, .suporte{
+.suporte .nav-link {
+  margin-right: 10px; 
+}
+
+.redes_sociais .nav-link{
+  margin-left: 15px;
+}
+
+.mapa_nav{
+  list-style: none;
+  padding: 0px;
+}
+
+.redes_sociais{
+  display: flex;
   list-style: none;
 }
 
@@ -130,4 +116,6 @@ ul.suporte{
   height: 50px;
 }
 
-   
+.img_doe{
+  border-radius: 10%;
+}
