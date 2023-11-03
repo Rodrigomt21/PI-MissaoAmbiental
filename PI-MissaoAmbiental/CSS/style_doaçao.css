@@ -2,24 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 
-
 *{
   scroll-behavior: smooth;
 }
 
 main{
+  padding-top: 90px;
   font-family: 'Young Serif', serif;
   border-radius: 10px;
-  padding-top: 110px;
 }
 
 body {
-  overflow-x: hidden;  
+  overflow-x: hidden;
   background: url(/PI-MissaoAmbiental/images/FUNDO.DOAÇÃO.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.conteudo{
+  text-align: center;
+}
+
+.conteudo h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  color: #000000;
+}
+
+.conteudo p {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Poppins';
+  color: #000000;
+}
+
 
 button{
   transition: 0.5s; 
@@ -45,6 +65,8 @@ header a:hover{
 footer{
   padding: 30px;
   background-color: beige;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
 }
   
 footer a{
