@@ -7,10 +7,11 @@
 }
 
 main{
-  margin-top: 90px;
+  padding-top: 90px;
   font-family: 'Young Serif', serif;
   padding-bottom: 20px;
 }
+
 
 body {
   overflow-x: hidden;
@@ -18,7 +19,6 @@ body {
   background-origin:padding-box;
   background-attachment: fixed;
 }
-
 
 #carouselExampleIndicators{
   padding: 20px;
