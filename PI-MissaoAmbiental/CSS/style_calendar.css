@@ -45,22 +45,27 @@ html{
 #header button.buttonmes {
   background-color:var(--header-button);
 }
-#container {
-  width: 770px;
-}
+
 #weekdays {
   display: flex;
   color: var(--color-weekdays) ;
 }
+
 #weekdays div {
-  width: 200px;
+  width:110px;
   padding: 10px;
 }
 #calendar {
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
+}
+
+#calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
 }
 .day {
   width: 100px;
