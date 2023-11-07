@@ -169,13 +169,12 @@ ul.suporte{
 .seletor li{
   padding-left: 200px;
 }
-.seletor button:hover{
-  background-color: greenyellow;
-}
 .seletor button{
   border-radius: 25%;
   height: 50px;
   transition: 0.5s;
+  color: white;
+  background-color: rgb(39, 117, 39);
 }
 #especies-nativas{
   text-align: center;
@@ -198,4 +197,14 @@ ul.suporte{
 }
 #compostagem{
   align-items: center;
+}
+.seemore{
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 25%;
+  background-color: rgb(39, 117, 39);
+}
+#oculto{
+  display: none;
 }
