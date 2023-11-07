@@ -7,14 +7,18 @@
 }
 
 
+body {
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+}
+
 main{
   margin: 10px;
   padding: 10px;
 }
-
-body {
-  background-color: #f5f5f5 !important;
-  overflow-x: hidden;
+section{
+  padding-top: 90px;
+  height: auto;
 }
 
 .conteudos {
@@ -164,11 +168,17 @@ ul.suporte{
 .seletor{
   list-style: none;
   display: flex;
-  padding-top: 75px;
+  align-items:center;
+  justify-content: center;
+  padding-top: 50px;
 }
 .seletor li{
-  padding-left: 200px;
+  padding-left: 150px;
+  align-items: center;
+  justify-content: center;
+
 }
+
 .seletor button{
   border-radius: 25%;
   height: 50px;
