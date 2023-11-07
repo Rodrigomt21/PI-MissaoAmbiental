@@ -40,3 +40,4 @@ input:checked + label::after {
 label:active:after {
   width: 45px;
 }
+
