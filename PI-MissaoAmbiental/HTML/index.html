@@ -41,7 +41,7 @@
             <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
             </script>
-        <header> 
+        <header id="topo"> 
             <nav class="navbar navbar-expand-lg bg fixed-top custom-menu">
                 <div class="container-fluid justify-content-center">
                     <a class="navbar-brand" href="index.html">
@@ -100,13 +100,14 @@
         </header>
         <section>
             <div class="img-container" style="padding: 0px; margin: 0;">
-                <img
+                <img style="width: 1400px; height: 675px;"
                     src="/PI-MissaoAmbiental/images/folhas9.jpg"
                     class="img-fluid"
                     alt="Imagem de fundo">
+                    
                 <div
-                    class="position-absolute top-50 start-50 translate-middle text-center text-overlay">
-                    <h1 class="text-light">Missão ambiental</h1>
+                    class="position-absolute top-50 start-50 translate-middle text-center text-overlay" style="margin-top:38px;">
+                    <h1 class="text-light" >Missão ambiental</h1>
                     <p class="text-light" style="margin-bottom: 10px;">
                         A Missão Ambiental é uma associação civil sem fins lucrativos que cria espaços
                         de preservação e convivência para a comunidade de vida na Terra buscando
@@ -136,7 +137,7 @@
                 <div class="conteiner">
                     <div class="row" id="especies-nativas">
                         <div class="col-12">
-                            <h1>Espécies Nativas</h1>
+                            <h1 style="padding-top: 30px;">Espécies Nativas</h1>
                             <p style="padding-left: 100px; padding-right: 100px; margin-bottom: 50px;">
                                 Aqui é onde mostraremos um pouco do que o nosso trabalho gerou na região, falando um pouco das espécies nativas que se desenvolveram junto ao nosso avanço em prol da natureza
                             </p>
@@ -491,7 +492,7 @@
         </article>
 
         <div class="row">
-            <div class="col-12 mt-5" style="padding-left: 47%;">
+            <div class="col-12 mt-5" style="padding-left: 47%; padding-bottom:30px;">
                 <button id="veja-mais" class="seemore">Veja Mais</button>
             </div>
         </div>   
@@ -524,7 +525,7 @@
 
         </div>
 
-        <div class="conteiner" id="projetos-interbairros" style="background-color: whitesmoke; padding-top: 20px;">
+        <div class="conteiner custom-menu-2" id="projetos-interbairros">
             <div class="row">
                 <div class="col-12 text-center pt-5">
                     <h1>Projetos Interbairros</h1>
@@ -556,7 +557,7 @@
 
     <footer>
         <div class="row">
-            <div class="col-3 ms-5">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px; margin-left:40px;">
                 <h6>MAPA DO SITE ></h6>
                 <ul class="mapa">
                     <li>
@@ -582,7 +583,7 @@
                 </ul>
             </div>
 
-            <div class="col-3">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px;">
                 <h6>FALE CONOSCO</h6>
                 <ul class="suporte" id="insta">
                     <li>
@@ -591,6 +592,7 @@
                             href="https://api.whatsapp.com/send?phone=51966776565"
                             target="_blank">
                             <i class="bi bi-whatsapp"></i>
+                            <span class="numero">51966776565</span>
                         </a>
                     </li>
 
@@ -599,12 +601,13 @@
                             class="nav-link"
                             href="mailto:missaoambiental.org@gmail.com ?subject=Assunto&body=Corpo da mensagem">
                             <i class="bi bi-envelope"></i>
+                            missaoambiental.org
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-3">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px;">
                 <h6>SIGA-NOS</h6>
                 <ul id="insta">
                     <li>
@@ -627,7 +630,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-2 ms-5" style="display: flex;">
+            <div class="col-sm-12 col-md col-lg-4 col-xl-3" style="display: flex; margin-top: 5px;">
                 <button class="volta-topo" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
                 <a class="nav-link" style="padding-top: 12px;" href="#topo">
                     <i class="bi bi-caret-up-fill"></i>

@@ -11,10 +11,7 @@ main{
   font-family: 'Young Serif', serif;
   
 }
-body.dark {
-  background-color: #000000 !important; 
-  color: yellow !important;  /* Define a cor do texto como branco */
-}
+
 
 body {
   overflow-x: hidden;
@@ -22,6 +19,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.dark body{
+  background-color: #000000 !important; 
+  color: yellow !important;  /* Define a cor do texto como branco */
+  background: none !important; /* Remove a imagem de fundo no modo escuro */
+}
+
 
 button{
   transition: 0.5s; 
@@ -43,11 +47,15 @@ header a:hover{
   font-weight: bolder;
   cursor: pointer; 
 }
+
+.dark .numero{
+  color: yellow;
+}
+
 footer{
-  padding: 40px;
+  padding: 10px;
   background-color: beige;
   font-family: 'Poppins', sans-serif;
-  margin-top: 10px;
 }
   
 footer a{
@@ -66,7 +74,6 @@ body.dark footer{
   color: yellow;
 }
 
-
 .dark footer button{
   color: yellow;
 }
@@ -80,14 +87,26 @@ body.dark footer{
   background-color: black;
 }
 
-.dark .numero{
-  color: yellow;
-}
 
 ul.suporte, ul.redes_sociais{
   margin-right: 0px;
   padding-left: 0px;
 }
+
+.custom-menu-2{
+  flex-wrap: wrap; 
+  margin: 10px; 
+  background-color: rgba(245, 245, 245, 0.727); 
+  border-radius: 20px; 
+  padding: 20px;
+  flex: 1; 
+  padding: 10px;
+  padding-top: 50px;
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+
 
 .suporte {
   list-style: none;

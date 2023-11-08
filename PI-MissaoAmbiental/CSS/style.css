@@ -64,6 +64,12 @@ section img{
   align-items: center;
 }
 
+.custom-menu-2{
+  background-color: whitesmoke; 
+  padding-top: 20px;
+
+}
+
 article {
   max-width: max-content;
   max-height: max-content;

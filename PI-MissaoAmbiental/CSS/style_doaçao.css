@@ -20,6 +20,13 @@ body {
   background-attachment: fixed;
 }
 
+body.dark {
+  background-color: #000000 !important; 
+  color: yellow !important;  /* Define a cor do texto como branco */
+  background-image: none;
+}
+
+
 .conteudo{
   text-align: center;
 }
@@ -40,6 +47,20 @@ body {
   color: #000000;
 }
 
+.custom-menu-2{
+  background-color: rgba(245, 245, 245, 0.727); 
+  border-radius: 20px; 
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.dark section p{
+  color:yellow;
+}
+.dark .custom-menu-2{
+  background-color: black;
+  color: yellow;
+}
 
 button{
   transition: 0.5s; 
@@ -81,6 +102,51 @@ footer a:hover{
   color: #13601d; 
   font-weight: bolder;
   cursor: pointer; 
+}
+
+
+body.dark footer{
+  background-color: black;
+  color: yellow;
+}
+
+
+.dark footer button{
+  color: yellow;
+}
+
+.copy{
+  color: black;
+}
+
+.dark .copy{
+  color: yellow;
+  background-color: black;
+}
+
+.dark header a{
+  background-color: black;
+  color: yellow; 
+}
+
+.dark html{
+  background-color: black;
+  color: yellow;
+}
+.dark *{
+  background-color: black;
+  color: yellow;
+}
+
+.dark nav{
+  background-color: black;
+  color: white;
+}
+
+/* Estilo para o modo escuro */
+.dark .custom-menu {
+  background-color: black; /* Cor de fundo no modo escuro */
+  color: yellow; /* Cor do texto no modo escuro */
 }
 
 ul.suporte, ul.redes_sociais{
