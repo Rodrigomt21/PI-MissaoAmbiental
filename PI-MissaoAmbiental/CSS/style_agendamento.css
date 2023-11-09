@@ -1,38 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
   scroll-behavior: smooth;
 }
 
+body.dark {
+  background-color: #000000 !important; 
+  color: yellow !important;  /* Define a cor do texto como branco */
+}
 main{
   padding-top: 90px;
   font-family: 'Poppins', serif;
   border-radius: 10px;
 }
 
+.dark main{
+  background-color: black;
+  color: yellow;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
+}
+
+.dark table{
+  background-color: black;
 }
 th, td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: center;
 }
+
+.dark th, td{
+  background-color: black;
+}
+
 th {
     background-color: #f2f2f2;
+}
+
+.dark th{
+  background-color: black;
 }
 
 button {
     margin: 10px;
     display: flex;
 }  
+
 .botoes{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }button{
   transition: 0.5s; 
 }
@@ -42,6 +67,10 @@ button:hover{
   color: #07300c; 
   font-weight: bolder;
   cursor: pointer; 
+}
+
+.dark button:hover{
+  color: yellow;
 }
   
 header a{
@@ -53,6 +82,45 @@ header a:hover{
   font-weight: bolder;
   cursor: pointer; 
 }
+
+
+.dark header a{
+  background-color: black;
+  color: yellow; 
+}
+
+.dark html{
+  background-color: black;
+  color: yellow;
+}
+.dark *{
+  background-color: black;
+  color: yellow;
+}
+
+.dark nav{
+  background-color: black;
+  color: white;
+}
+
+.custom-menu{
+  background-color: white;
+}
+
+/* Estilo para o modo escuro */
+.dark .custom-menu {
+  background-color: #000000; /* Cor de fundo no modo escuro */
+  color: yellow; /* Cor do texto no modo escuro */
+}
+
+.dark .custom-menu-2{
+  background-color: black;
+  color: yellow;
+}
+
+
+
+
 
 footer{
   padding: 30px;
@@ -72,9 +140,20 @@ footer a:hover{
   cursor: pointer; 
 }
 
-.custom-menu{
-  background-color: white;
+.dark footer button{
+  color: yellow;
 }
+
+.copy{
+  color: black;
+}
+
+.dark .copy{
+  color: yellow;
+  background-color: black;
+}
+
+
 
 ul.suporte, ul.redes_sociais{
   margin-right: 0px;
@@ -111,7 +190,6 @@ ul.suporte, ul.redes_sociais{
   padding: 0;
   height: 50px;
 }
-
 
 .checkbox {
   opacity: 0;
