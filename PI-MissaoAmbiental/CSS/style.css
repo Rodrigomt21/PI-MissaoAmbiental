@@ -23,6 +23,7 @@ body {
 main{
   margin: 10px;
   padding: 10px;
+  background-color: whitesmoke;
 }
 
 section{
@@ -252,13 +253,7 @@ ul.suporte{
 
 }
 
-.seletor button{
-  border-radius: 25%;
-  height: 50px;
-  transition: 0.5s;
-  color: white;
-  background-color: rgb(39, 117, 39);
-}
+
 #especies-nativas{
   text-align: center;
 }
