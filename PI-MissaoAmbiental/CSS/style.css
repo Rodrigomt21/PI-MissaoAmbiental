@@ -139,11 +139,21 @@ button{
   transition: 0.5s; 
 }
 
+.dark button{
+  color: yellow;
+  border-color: yellow;
+}
+
 button:hover{
   padding: 1px;
   color: #07300c; 
   font-weight: bolder;
   cursor: pointer; 
+}
+
+.dark button:hover{
+  color: black;
+  background-color: yellow;
 }
 
 
@@ -283,6 +293,13 @@ ul.suporte{
   border-radius: 25%;
   background-color: rgb(39, 117, 39);
 }
+
+.dark .seemore{
+  color: yellow;
+  border-color: yellow;
+  background-color: black;
+}
+
 .conteudo-oculto {
   display: none;
   opacity: 0;
@@ -336,4 +353,18 @@ ul.suporte{
 
 .fa-sun {
   color: #f39c12;
+}
+
+
+#compostagem-comunitaria{
+  padding-top: 60px;
+}
+
+#especies-nativas2{
+  padding-top: 75px;
+}
+
+#projetos-interbairros{
+  padding-top: 60px;
+
 }
