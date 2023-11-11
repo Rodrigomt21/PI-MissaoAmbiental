@@ -28,7 +28,9 @@ body.dark {
 #carouselExampleIndicators{
   padding: 20px;
   margin: 20px;
+  padding-bottom: 5px;
 }
+
 
 button{
   transition: 0.5s; 
