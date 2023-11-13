@@ -126,6 +126,21 @@ ul.suporte, ul.redes_sociais{
 }
 
 
+.carousel-control-next-icon{
+  background-color: #072b0b;
+}
+.carousel-control-prev-icon{
+  background-color: #072b0b;
+}
+
+ .dark .carousel-control-prev-icon{
+  background-color: black;
+}
+
+.dark .carousel-control-next-icon{
+  background-color: color;
+}
+
 .dark .copy{
   color: yellow;
   background-color: black;
