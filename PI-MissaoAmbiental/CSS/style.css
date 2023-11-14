@@ -30,36 +30,6 @@ section{
   height: auto;
 }
 
-.conteudos {
-  padding: 10px;
-  margin: 10px;
-}
-
-.conteudo {
-  margin: 10px;
-  padding: 10px;
-}
-
-.conteudo h1 {
-  font-size: 50px;
-  line-height: 1.2;
-  margin: 10px;
-  padding: 10px;
-}
-
-.conteudo h3 {
-  font-size: 40px;
-  font-weight: 700;
-  margin: 10px;
-  padding: 10px;
-}
-
-.conteudo p {
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-}
-
 section img{
   align-items: center;
 }
@@ -67,7 +37,6 @@ section img{
 .custom-menu-2{
   background-color: whitesmoke; 
   padding-top: 20px;
-
 }
 
 article {
@@ -259,9 +228,7 @@ ul.suporte{
   padding-left: 150px;
   align-items: center;
   justify-content: center;
-
 }
-
 
 #especies-nativas{
   text-align: center;
