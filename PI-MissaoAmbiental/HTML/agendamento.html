@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Missão Ambiental</title>
-        <link
-            rel="shortcut icon"
-            href="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/308345287_400257078952813_8226305583465141579_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Yx6_-htOnlEAX9ePjfh&_nc_ht=scontent-gru2-2.xx&oh=00_AfC0aRKexPh084HFQ2tnVonhTXG1LDd0giKjd8V_SCSTTw&oe=65341121"
-            type="image/x-icon">
-        <link rel="shortcut icon" href="../images/logo-favicon.png" type="image/x-icon">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous">
+        <link rel="shortcut icon" href="/PI-MissaoAmbiental/images/logo-favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style_agendamento.css">
         <link rel="stylesheet" href="/PI-MissaoAmbiental/CSS/style_calendar.css">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <script src="/PI-MissaoAmbiental/scripts/contraste.js"></script>
-        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>                                         
     </head>
 
     <body>
@@ -31,38 +21,24 @@
                 <div class="container-fluid justify-content-center">
                     <a class="navbar-brand" href="index.html">
                         <img src="/PI-MissaoAmbiental/images/logo.png" width="150"></a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div vw="vw" class="enabled custom">
-                        <div vw-access-button="vw-access-button" class="active"></div>
-                        <div vw-plugin-wrapper="vw-plugin-wrapper">
-                            <div class="vw-plugin-top-wrapper"></div>
-                        </div>
-                    </div>
-                    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-                    <script>
-                        new window
-                            .VLibras
-                            .Widget('https://vlibras.gov.br/app');
-                    </script>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav text-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/index.html">
-                                    <span style="padding-right: 10px; color: black">
-                                        <i class="bi bi-house-fill"></i>
-                                    </span>Home
-                                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/PI-MissaoAmbiental/HTML/index.html">
+                                <span  style= "padding-right: 10px; color: black" >
+                                    <i class="bi bi-house-fill"></i>
+                                </span>Home
+                            </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/PI-MissaoAmbiental/HTML/nossa-historia.html">
@@ -92,141 +68,196 @@
                                     </span>Doe aqui!
                                 </a>
                             </li>
+                        </div>
+                    </nav>
+                </nav>
+            </header>
+
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+                </script>
+
+            <main id="topo">
+                <div class="container">
+                    <div class="left">
+                      <div class="calendar">
+                        <div class="month">
+                          <i class="fas fa-angle-left prev"></i>
+                          <div class="date">december 2015</div>
+                          <i class="fas fa-angle-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                          <div>Sun</div>
+                          <div>Mon</div>
+                          <div>Tue</div>
+                          <div>Wed</div>
+                          <div>Thu</div>
+                          <div>Fri</div>
+                          <div>Sat</div>
+                        </div>
+                        <div class="days"></div>
+                        <div class="goto-today">
+                          <div class="goto">
+                            <input type="text" placeholder="mm/yyyy" class="date-input" />
+                            <button class="goto-btn">Go</button>
+                          </div>
+                          <button class="today-btn">Today</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <div class="today-date">
+                        <div class="event-day">wed</div>
+                        <div class="event-date">12th december 2022</div>
+                      </div>
+                      <div class="events"></div>
+                      <div class="add-event-wrapper">
+                        <div class="add-event-header">
+                          <div class="title">Add Event</div>
+                          <i class="fas fa-times close"></i>
+                        </div>
+                        <div class="add-event-body">
+                          <div class="add-event-input">
+                            <input type="text" placeholder="Event Name" class="event-name" />
+                          </div>
+                          <div class="add-event-input">
+                            <input
+                              type="text"
+                              placeholder="Event Time From"
+                              class="event-time-from"
+                            />
+                          </div>
+                          <div class="add-event-input">
+                            <input
+                              type="text"
+                              placeholder="Event Time To"
+                              class="event-time-to"
+                            />
+                          </div>
+                        </div>
+                        <div class="add-event-footer">
+                          <button class="add-event-btn">Add Event</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="add-event">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <script src="/PI-MissaoAmbiental/scripts/script_calendario.js"></script>
+
+
+                  <article class="row" style="padding: 40px; margin: 20px;">
+                    <div class="col-lg col-md col-xl col-sm text-center">
+                        <h3>COMO CHEGAR</h3>
+                        <p>Para nos visitar basta clicar no mapa e seguir viagem para conhecer um pouco
+                            das nossas instalações</p>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9" style="justify-content: center; display: flex; align-items: center;">
+                        <iframe
+                            class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.342696184892!2d-46.61611878952118!3d-23.592039562630585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b36975b7625%3A0x69aeac37903cc961!2sMISS%C3%83O%20AMBIENTAL%20-%20PORTARIA%2001!5e0!3m2!1spt-BR!2sbr!4v1697316203530!5m2!1spt-BR!2sbr"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="width: 2000px; height: 600px;"
+                        ></iframe>
+                    </div>
+                    
+                    </div>
+                    
+                </article>
+            </main>
+    <footer>
+            <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3 my-4">
+                        <h6>MAPA DO SITE</h6>
+                        <ul class="mapa_nav">
+                            <li>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/nossa-historia.html">Nossa História</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/agendamento.html">Agendamento</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/galeria.html">Galeria</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="/PI-MissaoAmbiental/HTML/doacao.html">Doe aqui!</a>
+                            </li>
                         </ul>
                     </div>
-                </nav>
-            </nav>
-        </header>
 
-            <main>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div id="header"></div>
-                            <div class="buttonmes custom-menu-2">
-                                <button id="backButton">Mês anterior</button>
-                                <button id="nextButton">Próximo mês</button>
-                            </div>
-                            <div style="padding: 20px;" id="monthDisplay"></div>
-                            <div id="weekdays">
-                                <div>Domingo</div>
-                                <div>Segunda-feira</div>
-                                <div>Terça-feira</div>
-                                <div>Quarta-feira</div>
-                                <div>Quinta-feira</div>
-                                <div>Sexta-feira</div>
-                                <div>Sábado</div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-center" id="calendar"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3 my-4">
+                        <h6>FALE CONOSCO</h6>
+                        <ul class="redes_sociais" id="insta">
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    href="https://api.whatsapp.com/send?phone=51966776565"
+                                    target="_blank">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    href="mailto:missaoambiental.org@gmail.com?subject=Assunto&body=Corpo da mensagem">
+                                    <i class="bi bi-envelope small"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div style="padding: 20px;" id="monthDisplay"></div>
 
-            </div>
-        </div>
-        <div id="newEventModal">
-            <h2>Novo Evento</h2>
-            <input id="eventTitleInput" placeholder="Event Title"/>
-            <button id="saveButton">Salvar</button>
-            <button id="cancelButton">Cancelar</button>
-        </div>
-        <div id="deleteEventModal">
-            <h2>Evento</h2>
-            <div id="eventText"></div><br>
-            <button id="deleteButton">Deletar</button>
-            <button id="closeButton">Fechar</button>
-        </div>
-        <div id="modalBackDrop"></div>
-        <script src="/PI-MissaoAmbiental/scripts/darkMode.js"></script>
-        <script src="/PI-MissaoAmbiental/scripts/main.js"></script>
-
-        
-            <footer>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px;">
-                            <h6>MAPA DO SITE</h6>
-                            <ul class="mapa_nav">
-                                <li>
-                                    <a class="nav-link" href="/PI-MissaoAmbiental/HTML/index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="/PI-MissaoAmbiental/HTML/nossa-historia.html">Nossa História</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="/PI-MissaoAmbiental/HTML/agendamento.html">Agendamento</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="/PI-MissaoAmbiental/HTML/galeria.html">Galeria</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="/PI-MissaoAmbiental/HTML/doacao.html">Doe aqui!</a>
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px;">
-                            <h6>FALE CONOSCO</h6>
-                            <ul class="redes_sociais" id="insta">
-                                <li>
-                                    <a
-                                        class="nav-link"
-
-                                        href="https://api.whatsapp.com/send?phone=51966776565"
-                                        target="_blank">
-                                        <i class="bi bi-whatsapp"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="nav-link"
-                                        href="mailto:missaoambiental.org@gmail.com?subject=Assunto&body=Corpo da mensagem">
-                                        <i class="bi bi-envelope small"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-        
-                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3" style="margin-top: 20px;">
-                            <h6>SIGA-NOS</h6>
-                            <ul class="redes_sociais" id="insta">
-                                <li>
-                                    <a
-                                        class="nav-link"
-                                        href="https://www.instagram.com/missao.ambiental/"
-                                        target="_blank">
-                                        <i class="bi bi-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="nav-link"
-                                        href="https://www.facebook.com/missaoambiental.org"
-                                        target="_blank">
-                                        <i class="bi bi-facebook"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12 col-md col-lg-4 col-xl-3" style="display: flex; margin-top: 5px;">
-                            <button class="volta-topo text-center" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
-                            <a class="nav-link" href="#topo">
-                                <i class="bi bi-caret-up-fill"></i>
-                            </a>
-                        </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 my-4">
+                        <h6>SIGA-NOS</h6>
+                        <ul class="redes_sociais" id="insta">
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    href="https://www.instagram.com/missao.ambiental/"
+                                    target="_blank">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    href="https://www.facebook.com/missaoambiental.org"
+                                    target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 text-center" id="calendar"></div>
+                    <div class="col-sm-12 col-md col-lg-4 col-xl-3 my-4 d-flex">
+                        <button class="volta-topo" onclick="window.location.href='#topo'">VOLTAR PARA O TOPO</button>
+                        <a class="nav-link" href="#topo">
+                            <i class="bi bi-caret-up-fill"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav-item" style="margin-left: 1064px;">
-        
-                    <input type="checkbox" class="checkbox" id="chk" />
-                    <label class="label" for="chk">
-                      <i class="fas fa-moon"></i>
-                      <i class="fas fa-sun"></i>
-                      <div class="ball"></div>
-                    </label>                  
-                </div>   
             </div>
-
-    </body>
+            <div class="nav-item col-sm-12 col-md col-lg-4 col-xl-3 my-4 d-flex">
+                <input type="checkbox" class="checkbox" id="chk"/>
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+        <p class="col-sm col-md col-lg col-xl copy">&copy; 2023 Missão ambiental. Todos os direitos reservados.</p>            
+    </footer>
+</body>
 </html>
