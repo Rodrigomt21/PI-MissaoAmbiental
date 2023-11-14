@@ -23,18 +23,18 @@ let month = today.getMonth();
 let year = today.getFullYear();
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Janeiro",
+  "Fevereiro",
+  "Março",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Agosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro",
 ];
 
 // const eventsArr = [
@@ -206,7 +206,7 @@ dateInput.addEventListener("input", (e) => {
   if (dateInput.value.length > 7) {
     dateInput.value = dateInput.value.slice(0, 7);
   }
-  if (e.inputType === "deleteContentBackward") {
+  if (e.inputType === "De") {
     if (dateInput.value.length === 3) {
       dateInput.value = dateInput.value.slice(0, 2);
     }
