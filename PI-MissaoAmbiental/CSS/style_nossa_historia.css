@@ -18,6 +18,7 @@ body {
   background: url(/PI-MissaoAmbiental/images/fundo_nossa_historia.jpeg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .dark body{
@@ -96,7 +97,7 @@ ul.suporte, ul.redes_sociais{
 .custom-menu-2{
   flex-wrap: wrap; 
   margin: 10px; 
-  background-color: rgba(245, 245, 245, 0.727); 
+  background-color: rgba(245, 245, 245, 0.801); 
   border-radius: 20px; 
   padding: 20px;
   flex: 1; 

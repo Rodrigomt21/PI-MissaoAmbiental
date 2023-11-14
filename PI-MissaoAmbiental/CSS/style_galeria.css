@@ -18,6 +18,7 @@ body {
   background-image: url(/PI-MissaoAmbiental/images/fundo_galeria.jpeg);
   background-origin:padding-box;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 body.dark {
@@ -151,7 +152,7 @@ ul.suporte, ul.redes_sociais{
 }
 
 .custom-menu-2{
-background-color: rgba(245, 245, 245, 0.727); 
+background-color: rgba(245, 245, 245, 0.88);
 border-radius: 20px; width: 900px;  
 border-top-left-radius: 0;
 }
