@@ -26,27 +26,6 @@ body.dark {
   background-image: none;
 }
 
-
-.conteudo{
-  text-align: center;
-}
-
-.conteudo h3 {
-  font-size: 40px;
-  font-weight: 700;
-  margin: 10px;
-  padding: 10px;
-  color: #000000;
-}
-
-.conteudo p {
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Poppins';
-  color: #000000;
-}
-
 .custom-menu-2{
   background-color: rgba(245, 245, 245, 0.88); 
   border-radius: 20px; 
@@ -188,13 +167,12 @@ ul.suporte, ul.redes_sociais{
   border: 0;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: 5px;
 }
 
 .img_doe{
   border-radius: 10%;
 }
-
 
 .checkbox {
   opacity: 0;
@@ -209,6 +187,7 @@ ul.suporte, ul.redes_sociais{
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  margin-left: 15px;
   position: relative;
   height: 26px;
   width: 50px;

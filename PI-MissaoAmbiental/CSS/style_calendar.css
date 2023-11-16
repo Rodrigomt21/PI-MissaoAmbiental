@@ -775,7 +775,7 @@ main{
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -810,6 +810,11 @@ main{
   .add-event-wrapper {
     bottom: 100px;
   }
+
+  .calendar .weekdays {
+    height: 50px;
+    font-size: 1.0rem; /* Adjust font size for better readability */
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -837,7 +842,7 @@ main{
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .calendar .month {
     height: 60px;
     font-size: 0.9rem; /* Adjust font size for better readability */

@@ -9,9 +9,7 @@
 main{
   padding-top: 90px;
   font-family: 'Young Serif', serif;
-  
 }
-
 
 body {
   overflow-x: hidden;
@@ -102,11 +100,11 @@ ul.suporte, ul.redes_sociais{
   border-radius: 20px; 
   padding: 20px;
   flex: 1; 
-  padding: 10px;
-  margin-left: 80px;
-  margin-right: 80px;
-  padding-top: 50px;
-  margin-top: 50px;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -125,14 +123,13 @@ ul.suporte, ul.redes_sociais{
 .custom-menu-4{
   flex-wrap: wrap; 
   margin: 10px; 
-  padding: 20px;
-  flex: 1; 
   padding: 10px;
+  flex: 1; 
   padding-top: 50px;
   margin-top: 20px;
   text-align: center;
-  padding-bottom: 60px;
-  margin-bottom:30px;
+  padding-bottom: 40px;
+  margin-bottom:40px;
 }
 
 .suporte {
@@ -163,7 +160,7 @@ ul.suporte, ul.redes_sociais{
   border: 0;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: 5px;
 }
 
 .dark .copy{
@@ -207,8 +204,6 @@ ul.suporte, ul.redes_sociais{
   color: yellow; /* Cor do texto no modo escuro */
 }
 
-
-
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -222,6 +217,7 @@ ul.suporte, ul.redes_sociais{
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  margin-left: 15px;
   position: relative;
   height: 26px;
   width: 50px;
