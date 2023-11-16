@@ -844,7 +844,7 @@ main{
   }
   .calendar .weekdays {
     height: 40px;
-    font-size: 0.8rem; /* Adjust font size for better readability */
+    font-size: 0.4rem; /* Adjust font size for better readability */
   }
   .calendar .days .day {
     height: 30px;
