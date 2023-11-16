@@ -123,7 +123,7 @@ ul.suporte, ul.redes_sociais{
   border: 0;
   margin: 0;
   padding: 0;
-  height: 5px;
+  height: 50px;
 }
 
 
@@ -206,7 +206,6 @@ border-top-left-radius: 0;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  margin-left: 15px;
   position: relative;
   height: 26px;
   width: 50px;

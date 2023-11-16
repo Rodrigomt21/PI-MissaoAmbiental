@@ -218,6 +218,7 @@ ul.suporte{
   border: 0;
   margin: 0;
   padding: 0;
+  height: 50px;
 }
 
 .dark .volta-topo:hover{
@@ -303,7 +304,6 @@ ul.suporte{
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  margin-left: 15px;
   position: relative;
   height: 26px;
   width: 50px;
