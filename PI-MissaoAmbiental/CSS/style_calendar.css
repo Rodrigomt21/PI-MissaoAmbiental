@@ -16,20 +16,6 @@
   scroll-behavior: smooth;
 }
 
-/* nice scroll bar */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f5f5f5;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--primary-clr);
-  border-radius: 50px;
-}
 
 body {
   position: relative;
@@ -40,11 +26,16 @@ body {
   color: var(--text-clr);
 }
 
+.dark body{
+  color: yellow;
+  background-color: black;
+}
+
 /* Restante do seu CSS */
 
 
 main{
-  padding-top: 100px;
+  padding-top: 135px;
 }
 
 .container {
@@ -56,12 +47,19 @@ main{
   color: #fff;
   display: flex;
   border-radius: 10px;
-  background-color: #373c4f;
+  background-color: rgb(4, 45, 4);
 }
+
+.dark .container{
+  color: yellow;
+  background-color: black;
+}
+
 .left {
   width: 60%;
   padding: 20px;
 }
+
 .calendar {
   position: relative;
   width: 100%;
@@ -74,6 +72,12 @@ main{
   border-radius: 5px;
   background-color: #fff;
 }
+
+.dark .calendar{
+  color: yellow;
+  background-color: black;
+}
+
 /* set after behind the main element */
 .calendar::before,
 .calendar::after {
@@ -87,11 +91,24 @@ main{
   background-color: #d3d4d6d7;
   transform: translateY(-50%);
 }
+
+.dark .calendar::before,
+.dark .calendar::after {
+  color: yellow;
+  background-color: black;
+}
+
 .calendar::before {
   height: 94%;
   left: calc(100% + 12px);
   background-color: rgb(153, 153, 153);
 }
+
+.dark .calendar::before {
+  color: yellow;
+  background-color: black;
+}
+
 .calendar .month {
   width: 100%;
   height: 150px;
@@ -107,10 +124,18 @@ main{
 .calendar .month .next {
   cursor: pointer;
 }
+
 .calendar .month .prev:hover,
 .calendar .month .next:hover {
   color: var(--primary-clr);
 }
+
+.dark .calendar .month .prev:hover,
+.dark .calendar .month .next:hover {
+  color: black;
+  background-color: yellow;
+}
+
 .calendar .weekdays {
   width: 100%;
   height: 100px;
@@ -122,6 +147,7 @@ main{
   font-weight: 500;
   text-transform: capitalize;
 }
+
 .weekdays div {
   width: 14.28%;
   height: 100%;
@@ -129,6 +155,8 @@ main{
   align-items: center;
   justify-content: center;
 }
+
+
 .calendar .days {
   width: 100%;
   display: flex;
@@ -139,6 +167,7 @@ main{
   font-weight: 500;
   margin-bottom: 20px;
 }
+
 .calendar .days .day {
   width: 14.28%;
   height: 90px;
@@ -149,33 +178,82 @@ main{
   color: var(--primary-clr);
   border: 1px solid #f5f5f5;
 }
+
+.dark .calendar .days .day {
+  color: yellow;
+  background-color: black;
+  border: 1px solid yellow;
+}
+
 .calendar .days .day:nth-child(7n + 1) {
   border-left: 2px solid #f5f5f5;
 }
+
+.dark .calendar .days .day:nth-child(7n + 1) {
+  border-left: 2px solid yellow;
+}
+
+
 .calendar .days .day:nth-child(7n) {
   border-right: 2px solid #f5f5f5;
 }
+
+.dark .calendar .days .day:nth-child(7n) {
+  border-right: 2px solid yellow;
+}
+
 .calendar .days .day:nth-child(-n + 7) {
   border-top: 2px solid #f5f5f5;
 }
+
+.dark .calendar .days .day:nth-child(-n + 7) {
+  border-top: 2px solid yellow;
+}
+
 .calendar .days .day:nth-child(n + 29) {
   border-bottom: 2px solid #f5f5f5;
 }
+
+.dark .calendar .days .day:nth-child(n + 29) {
+  border-bottom: 2px solid yellow;
+}
+
 
 .calendar .days .day:not(.prev-date, .next-date):hover {
   color: #fff;
   background-color: var(--primary-clr);
 }
+
+.dark .calendar .days .day:not(.prev-date, .next-date):hover {
+  background-color: yellow;
+  color: black;
+}
+
+
+
 .calendar .days .prev-date,
 .calendar .days .next-date {
   color: #b3b3b3;
 }
+
+.dark .calendar .days .prev-date,
+.dark .calendar .days .next-date {
+  color: yellow;
+}
+
 .calendar .days .active {
   position: relative;
   font-size: 2rem;
   color: #fff;
   background-color: var(--primary-clr);
 }
+
+
+.dark .calendar .days .active {
+  color: yellow;
+  background-color: black;
+}
+
 .calendar .days .active::before {
   content: "";
   position: absolute;
@@ -185,12 +263,19 @@ main{
   height: 100%;
   box-shadow: 0 0 10px 2px var(--primary-clr);
 }
+
+.dark .calendar .days .active::before {
+  box-shadow: 0 0 10px 2px yellow;
+}
+
 .calendar .days .today {
   font-size: 2rem;
 }
+
 .calendar .days .event {
   position: relative;
 }
+
 .calendar .days .event::after {
   content: "";
   position: absolute;
@@ -202,16 +287,34 @@ main{
   transform: translateX(-50%);
   background-color: var(--primary-clr);
 }
+
+.dark .calendar .days .event::after {
+  background-color: black;
+}
+
 .calendar .days .day:hover.event::after {
   background-color: #fff;
 }
+
+.dark .calendar .days .day:hover.event::after {
+  background-color: yellow;
+  color: black;
+}
+
 .calendar .days .active.event::after {
   background-color: #fff;
   bottom: 20%;
 }
+
+.dark .calendar .days .active.event::after {
+  background-color: black;
+  color: yellow;
+}
+
 .calendar .days .active.event {
   padding-bottom: 10px;
 }
+
 .calendar .goto-today {
   width: 100%;
   height: 50px;
@@ -223,6 +326,15 @@ main{
   margin-bottom: 20px;
   color: var(--primary-clr);
 }
+
+.dark .date-input::placeholder{
+  color: yellow;
+}
+
+.dark .calendar .goto-today {
+  color: yellow;
+}
+
 .calendar .goto-today .goto {
   display: flex;
   align-items: center;
@@ -230,6 +342,11 @@ main{
   overflow: hidden;
   border: 1px solid var(--primary-clr);
 }
+
+.dark .calendar .goto-today .goto {
+  border: 1px solid yellow;
+}
+
 .calendar .goto-today .goto input {
   width: 100%;
   height: 30px;
@@ -240,6 +357,11 @@ main{
   color: var(--primary-clr);
   border-radius: 5px;
 }
+
+.dark .calendar .goto-today .goto input {
+  color: yellow;
+}
+
 .calendar .goto-today button {
   padding: 5px 10px;
   border: 1px solid var(--primary-clr);
@@ -248,15 +370,38 @@ main{
   cursor: pointer;
   color: var(--primary-clr);
 }
+
+.dark .calendar .goto-today button {
+  border: 1px solid yellow;
+  color:yellow;
+}
+
+.dark .calendar .goto-today button {
+  background-color: black;
+  color: yellow;
+}
 .calendar .goto-today button:hover {
   color: #fff;
   background-color: var(--primary-clr);
 }
+
+.dark .calendar .goto-today button:hover {
+  color: black;
+  background-color: yellow;
+}
+
 .calendar .goto-today .goto button {
   border: none;
   border-left: 1px solid var(--primary-clr);
   border-radius: 0;
 }
+
+.dark .calendar .goto-today .goto button {
+  border: none;
+  border-left: 1px solid yellow;
+  border-radius: 0;
+}
+
 .container .right {
   position: relative;
   width: 40%;
@@ -287,6 +432,11 @@ main{
   font-weight: 400;
   color: #878895;
 }
+
+.dark .right .today-date .event-date {
+  color:yellow;
+}
+
 .events {
   width: 100%;
   height: 100%;
@@ -297,6 +447,7 @@ main{
   flex-direction: column;
   padding-left: 4px;
 }
+
 .events .event {
   position: relative;
   width: 95%;
@@ -311,13 +462,31 @@ main{
   background: linear-gradient(90deg, #3f4458, transparent);
   cursor: pointer;
 }
+
+.dark .events .event {
+  color: yellow;
+  background: black;
+}
+
 /* even event */
 .events .event:nth-child(even) {
   background: transparent;
 }
+
+/* even event */
+.dark .events .event:nth-child(even) {
+  background: black;
+}
+
 .events .event:hover {
   background: linear-gradient(90deg, var(--primary-clr), transparent);
 }
+
+.dark .events .event:hover {
+  background: yellow;
+  color: black;
+}
+
 .events .event .title {
   display: flex;
   align-items: center;
@@ -332,9 +501,20 @@ main{
   color: var(--primary-clr);
   font-size: 0.5rem;
 }
+
+.dark .events .event i {
+  color: yellow;
+}
+
 .events .event:hover i {
   color: #fff;
 }
+
+.dark .events .event:hover i {
+  color: black;
+  background-color: yellow;
+}
+
 .events .event .event-time {
   font-size: 0.8rem;
   font-weight: 400;
@@ -342,9 +522,21 @@ main{
   margin-left: 15px;
   pointer-events: none;
 }
+
+.dark .events .event .event-time {
+  color: yellow;
+  background-color: black;
+}
+
 .events .event:hover .event-time {
   color: #fff;
 }
+
+.events .event:hover .event-time {
+  color: black;
+  background-color: yellow;
+}
+
 /* add tick in event after */
 .events .event::after {
   content: "✓";
@@ -360,9 +552,15 @@ main{
   color: var(--primary-clr);
   transform: translateY(-50%);
 }
+
+.dark .events .event::after {
+  color: yellow;
+}
+
 .events .event:hover::after {
   display: flex;
 }
+
 .add-event {
   position: absolute;
   bottom: 30px;
@@ -373,19 +571,31 @@ main{
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: #878895;
-  border: 2px solid #878895;
+  color: white;
+  border: 2px solid white;
   opacity: 0.5;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
 }
-.add-event:hover {
-  opacity: 1;
+
+.dark .add-event {
+  color: rgb(255, 255, 23);
+  border: 2px solid yellow;
+  opacity: 4;
 }
+
+.add-event:hover {
+  opacity: 5;
+  color: white;
+}
+
+
 .add-event i {
   pointer-events: none;
 }
+
+
 .events .no-event {
   width: 100%;
   height: 100%;
@@ -396,6 +606,11 @@ main{
   font-weight: 500;
   color: #878895;
 }
+
+.dark .events .no-event {
+  color: rgb(255, 255, 1);
+}
+
 .add-event-wrapper {
   position: absolute;
   bottom: 100px;
@@ -408,9 +623,17 @@ main{
   transform: translateX(-50%);
   transition: max-height 0.5s ease;
 }
+
+
+.dark .add-event-wrapper {
+  background-color: black;
+  color: yellow;
+}
+
 .add-event-wrapper.active {
   max-height: 300px;
 }
+
 .add-event-header {
   width: 100%;
   height: 50px;
@@ -421,6 +644,12 @@ main{
   color: #373c4f;
   border-bottom: 1px solid #f5f5f5;
 }
+
+.dark .add-event-header {
+  color: yellow;
+  border-bottom: 1px solid yellow;
+}
+
 .add-event-header .close {
   font-size: 1.5rem;
   cursor: pointer;
@@ -428,10 +657,17 @@ main{
 .add-event-header .close:hover {
   color: var(--primary-clr);
 }
+
+.dark .add-event-header .close:hover {
+  color: black;
+  background-color: yellow;
+}
+
 .add-event-header .title {
   font-size: 1.2rem;
   font-weight: 500;
 }
+
 .add-event-body {
   width: 100%;
   height: 100%;
@@ -440,6 +676,7 @@ main{
   gap: 5px;
   padding: 20px;
 }
+
 .add-event-body .add-event-input {
   width: 100%;
   height: 40px;
@@ -448,6 +685,11 @@ main{
   justify-content: space-between;
   gap: 10px;
 }
+
+.dark .add-event-body .add-event-input {
+  color: yellow;
+}
+
 .add-event-body .add-event-input input {
   width: 100%;
   height: 100%;
@@ -459,21 +701,43 @@ main{
   font-weight: 400;
   color: #373c4f;
 }
+
+.dark .add-event-body .add-event-input input {
+  border-bottom: 1px solid yellow;
+  color: yellow;
+}
+
 .add-event-body .add-event-input input::placeholder {
   color: #a5a5a5;
 }
+
+.dark .add-event-body .add-event-input input::placeholder {
+  color: yellow;
+}
+
 .add-event-body .add-event-input input:focus {
   border-bottom: 1px solid var(--primary-clr);
 }
+
+.dark .add-event-body .add-event-input input:focus {
+  border-bottom: 1px solid yellow;
+}
+
 .add-event-body .add-event-input input:focus::placeholder {
   color: var(--primary-clr);
 }
+
+.dark .add-event-body .add-event-input input:focus::placeholder {
+  color: yellow;
+}
+
 .add-event-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
+
 .add-event-footer .add-event-btn {
   height: 40px;
   font-size: 1rem;
@@ -487,9 +751,21 @@ main{
   padding: 5px 10px;
   border: 1px solid var(--primary-clr);
 }
+
+.dark .add-event-footer .add-event-btn {
+  color: yellow;
+  background-color: black;
+  border: 1px solid yellow;
+}
+
 .add-event-footer .add-event-btn:hover {
   background-color: transparent;
   color: var(--primary-clr);
+}
+
+.dark .add-event-footer .add-event-btn:hover {
+  background-color: yellow;
+  color: black;
 }
 
 

@@ -54,7 +54,7 @@ header a:hover{
   cursor: pointer; 
 }
 footer{
-  padding: 10px;
+  padding: 30px;
   background-color: beige;
   font-family: 'Poppins', sans-serif;
 }
@@ -185,6 +185,12 @@ border-top-left-radius: 0;
 .dark .custom-menu {
   background-color: black; /* Cor de fundo no modo escuro */
   color: yellow; /* Cor do texto no modo escuro */
+}
+
+.dark header a:hover{
+  color: yellow; 
+  font-weight: bolder;
+  cursor: pointer; 
 }
 
 .checkbox {

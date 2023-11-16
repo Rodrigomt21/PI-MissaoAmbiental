@@ -19,6 +19,7 @@ button {
     display: flex;
 }  
 
+
 .botoes{
     display: flex;
     align-items: center;
@@ -53,6 +54,12 @@ header a:hover{
 .dark header a{
   background-color: black;
   color: yellow; 
+}
+
+.dark header a:hover{
+  color: yellow; 
+  font-weight: bolder;
+  cursor: pointer; 
 }
 
 .dark html{

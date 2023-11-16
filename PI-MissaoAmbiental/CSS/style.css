@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -24,10 +23,12 @@ main{
   margin: 10px;
   padding: 10px;
   background-color: whitesmoke;
+  font-family: 'Young Serif', serif;
 }
 
 section{
   height: auto;
+  font-family: 'Young Serif', serif;
 }
 
 section img{
@@ -55,17 +56,18 @@ article {
 .text-overlay {
   width: 100%; 
   max-width: 490px;
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.904); 
   padding: 2%;
+  padding-top: 4%;
   border-radius: 20px;
   align-items: center;
 }
 
 footer{
   padding: 10px;
-  padding-top: 20px;
   background-color: beige;
-  padding-top: 20px;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer a{
@@ -144,6 +146,12 @@ header a:hover{
   cursor: pointer; 
 }
 
+.dark header a:hover{
+  color: yellow; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
 .dark header a{
   background-color: black;
   color: yellow; 
@@ -213,6 +221,11 @@ ul.suporte{
   height: 50px;
 }
 
+.dark .volta-topo:hover{
+  background-color: black;
+  color: yellow;
+}
+
 #nossa-historia{
   border-radius: 50px;
   height: 100%;
@@ -262,7 +275,7 @@ ul.suporte{
 
 .dark .seemore{
   color: yellow;
-  border-color: yellow;
+  border-color: yellow !important;
   background-color: black;
 }
 

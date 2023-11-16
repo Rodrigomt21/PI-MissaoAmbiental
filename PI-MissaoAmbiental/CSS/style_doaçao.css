@@ -83,6 +83,12 @@ header a:hover{
   cursor: pointer; 
 }
 
+.dark header a:hover{
+  color: yellow; 
+  font-weight: bolder;
+  cursor: pointer; 
+}
+
 .custom-menu{
   background-color: white;
 }
