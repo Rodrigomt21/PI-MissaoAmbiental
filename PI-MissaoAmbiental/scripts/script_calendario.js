@@ -17,6 +17,26 @@ const calendar = document.querySelector(".calendar"),
   addEventTo = document.querySelector(".event-time-to "),
   addEventSubmit = document.querySelector(".add-event-btn ");
 
+  const diasEmPortugues = {
+  "Sun": "Domingo",
+  "Mon": "Segunda",
+  "Tue": "Terça",
+  "Wed": "Quarta",
+  "Thu": "Quinta",
+  "Fri": "Sexta",
+  "Sat": "Sábado"
+};
+
+const diasExibidos = document.querySelectorAll(".event-day");
+
+diasExibidos.forEach((element) => {
+  const diaAtual = element.textContent.trim();
+  const diaEmPortugues = diasEmPortugues[diaAtual];
+  if (diaEmPortugues) {
+    element.textContent = diaEmPortugues;
+  }
+});
+
 let today = new Date();
 let activeDay;
 let month = today.getMonth();
@@ -53,7 +73,7 @@ function initCalendar() {
 
   date.innerHTML = months[month] + " " + year;
 
-  let days = "";
+  let days = ""
 
   for (let x = day; x > 0; x--) {
     days += `<div class="day prev-date">${prevDays - x + 1}</div>`;

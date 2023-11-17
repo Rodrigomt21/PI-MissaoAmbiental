@@ -483,8 +483,8 @@ main{
 }
 
 .dark .events .event:hover {
-  background: yellow;
-  color: black;
+  background: black;
+  color: yellow;
 }
 
 .events .event .title {
@@ -511,8 +511,8 @@ main{
 }
 
 .dark .events .event:hover i {
-  color: black;
-  background-color: yellow;
+  color: yellow;
+  background-color: black;
 }
 
 .events .event .event-time {
@@ -532,9 +532,9 @@ main{
   color: #fff;
 }
 
-.events .event:hover .event-time {
-  color: black;
-  background-color: yellow;
+.dark .events .event:hover .event-time {
+  color: yellow;
+  background-color: black;
 }
 
 /* add tick in event after */
@@ -548,7 +548,7 @@ main{
   display: none;
   align-items: center;
   justify-content: center;
-  opacity: 0.3;
+  opacity: 3;
   color: var(--primary-clr);
   transform: translateY(-50%);
 }

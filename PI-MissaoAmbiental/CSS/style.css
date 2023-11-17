@@ -218,7 +218,7 @@ ul.suporte{
   border: 0;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: 0px;
 }
 
 .dark .volta-topo:hover{
@@ -265,13 +265,7 @@ ul.suporte{
 #compostagem{
   align-items: center;
 }
-.seemore{
-  color: white;
-  display: flex;
-  align-items: center;
-  border-radius: 25%;
-  background-color: rgb(39, 117, 39);
-}
+
 
 .dark .seemore{
   color: yellow;
