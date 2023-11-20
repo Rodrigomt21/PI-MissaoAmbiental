@@ -289,7 +289,8 @@ main{
 }
 
 .dark .calendar .days .event::after {
-  background-color: black;
+  background-color: yellow;
+  color: black;
 }
 
 .calendar .days .day:hover.event::after {
@@ -297,8 +298,8 @@ main{
 }
 
 .dark .calendar .days .day:hover.event::after {
-  background-color: yellow;
-  color: black;
+  background-color: black;
+  color: yellow;
 }
 
 .calendar .days .active.event::after {
@@ -307,8 +308,8 @@ main{
 }
 
 .dark .calendar .days .active.event::after {
-  background-color: black;
-  color: yellow;
+  background-color: yellow;
+  color: black;
 }
 
 .calendar .days .active.event {
