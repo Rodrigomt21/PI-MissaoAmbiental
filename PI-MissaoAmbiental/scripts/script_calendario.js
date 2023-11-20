@@ -231,12 +231,29 @@ function gotoDate() {
   alert("Data Inválida");
 }
 
+
+const diaAtual = [
+  "Janeiro",
+  "Fevereiro",
+  "Março",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Agosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro",
+];
+
 //function get active day day name and date and update eventday eventdate
-function getActiveDay(date) {
-  const day = new Date(year, month, date);
-  const dayName = day.toString().split(" ")[0];
+function getActiveDay(diaAtual) {
+  const day = new Date(year, month, diaAtual);
+  const weekdays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+  const dayName = weekdays[day.getDay()];
   eventDay.innerHTML = dayName;
-  eventDate.innerHTML = date + " " + months[month] + " " + year;
+  eventDate.innerHTML = diaAtual + ' ' + months[month] + ' ' +  year;
 }
 
 //function update events when a day is active
@@ -244,7 +261,7 @@ function updateEvents(date) {
   let events = "";
   eventsArr.forEach((event) => {
     if (
-      date === event.day &&
+      diaAtual === event.day &&
       month + 1 === event.month &&
       year === event.year
     ) {
