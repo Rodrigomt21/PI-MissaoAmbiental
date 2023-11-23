@@ -22,6 +22,7 @@ body {
 body.dark {
   background-color: #000000 !important; 
   color: yellow !important;  /* Define a cor do texto como branco */
+  background-image: none;
 }
 
 .dark main{
