@@ -3,6 +3,21 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+body {
+  overflow-x: hidden;
+  background-image: url(/PI-MissaoAmbiental/images/fundo_agendamento.jpeg);
+  background-origin:padding-box;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.custom-menu-2{
+  background-color: rgba(245, 245, 245, 0.88); 
+  border-radius: 30px; 
+  padding: 15px;
+  margin-top: 30px;
+
+}
 
 body.dark {
   background-color: #000000 !important; 
