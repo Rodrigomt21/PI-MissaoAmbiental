@@ -12,12 +12,19 @@ body {
 }
 
 .custom-menu-2{
-  background-color: rgba(245, 245, 245, 0.88); 
-  border-radius: 30px; 
-  padding: 15px;
-  margin-top: 30px;
+    flex-wrap: wrap; 
+    background-color: rgba(245, 245, 245, 0.962); 
+    border-radius: 20px; 
+    border-top-left-radius: 0px;
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    text-align: center;
+  }
 
-}
 
 body.dark {
   background-color: #000000 !important; 
