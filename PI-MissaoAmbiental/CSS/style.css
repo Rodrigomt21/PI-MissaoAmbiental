@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body.dark {
@@ -20,8 +20,6 @@ body {
 
 
 main{
-  margin: 10px;
-  padding: 10px;
   background-color: whitesmoke;
   font-family: 'Young Serif', serif;
 }
@@ -40,28 +38,42 @@ section img{
   padding-top: 20px;
 }
 
+
 article {
-  max-width: max-content;
-  max-height: max-content;
-  display: flex;
   margin-top: 90px;
   justify-content: center; 
   align-items: center;
   position: relative; 
   z-index: 1;
   background-color: #f5f5f5;
- 
 }
 
 .text-overlay {
-  width: 100%; 
+  width: 90%;  /* Ajuste a largura do overlay conforme necessário */
   max-width: 490px;
   background-color: rgba(0, 0, 0, 0.904); 
   padding: 2%;
-  padding-top: 4%;
   border-radius: 20px;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
+@media screen and (max-width: 400px) {
+  .text-overlay{
+    font-size: 0.7rem;
+  }
+
+  .seletor{
+    flex-direction: column;
+  }
+
+  .seletor li{
+    padding: 10px;
+  }
+}
+
 
 footer{
   padding: 10px;
@@ -235,19 +247,19 @@ ul.suporte{
   display: flex;
   align-items:center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .seletor li{
-  padding-left: 150px;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
+
 
 #especies-nativas{
   text-align: center;
 }
 #nativas{
-  display: flex;
   padding-top: 20px;
 }
 #nativas-i{
@@ -258,14 +270,10 @@ ul.suporte{
   height: 273.13px;
   width: 273.13px;
 }
-.seletor span{
-  display: block;
-  text-align: center;
-}
+
 #compostagem{
   align-items: center;
 }
-
 
 .dark .seemore{
   color: yellow;
