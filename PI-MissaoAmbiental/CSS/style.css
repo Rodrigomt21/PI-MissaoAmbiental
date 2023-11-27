@@ -24,20 +24,11 @@ main{
   font-family: 'Young Serif', serif;
 }
 
-section{
-  height: auto;
-  font-family: 'Young Serif', serif;
-}
-
-section img{
-  align-items: center;
-}
 
 .custom-menu-2{
   background-color: whitesmoke; 
   padding-top: 20px;
 }
-
 
 article {
   margin-top: 90px;
@@ -247,7 +238,7 @@ ul.suporte{
   display: flex;
   align-items:center;
   justify-content: center;
-  padding-top: 20px;
+  padding: 20px;
 }
 .seletor li{
   align-items: center;
@@ -255,20 +246,23 @@ ul.suporte{
   padding: 10px;
 }
 
-
 #especies-nativas{
   text-align: center;
 }
 #nativas{
-  padding-top: 20px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
 }
+
 #nativas-i{
-  padding-left: 20px;
-  text-align: left;
+  padding: 10px;
 }
-#nativas img{
-  height: 273.13px;
-  width: 273.13px;
+
+@media screen and (min-width: 1024px) {
+  #nativas{
+    display: flex;
+  }
 }
 
 #compostagem{
@@ -342,7 +336,7 @@ ul.suporte{
 }
 
 #especies-nativas2{
-  padding-top: 75px;
+  padding-top: 20px;
 }
 
 #projetos-interbairros{
