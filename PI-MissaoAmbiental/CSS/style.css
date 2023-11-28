@@ -80,12 +80,10 @@ footer a:hover{
   cursor: pointer; 
 }
 
-
 body.dark footer{
   background-color: black;
   color: yellow;
 }
-
 
 .dark footer button{
   color: yellow;
@@ -187,17 +185,14 @@ header a:hover{
 
 #topo{
   display: flex;
-
 }
+
 ul.mapa{
   padding: 0;
 }
 ul.suporte{
   padding: 0;
   padding-left: 50px;
-}
-.mapa, .suporte{
-  list-style: none;
 }
 
 .img-zoom {
@@ -244,6 +239,7 @@ ul.suporte{
 #especies-nativas{
   text-align: center;
 }
+
 #nativas{
   padding: 20px;
   align-items: center;
@@ -341,4 +337,12 @@ ul.suporte{
   justify-content: center;
   align-items: center;
   padding:20px;
+}
+
+.mapa_nav li{
+  list-style: none;
+}
+
+.mapa_nav{
+  padding-left: 0px;  
 }
