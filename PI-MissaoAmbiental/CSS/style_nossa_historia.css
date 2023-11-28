@@ -8,10 +8,8 @@
 
 main{
   padding-top: 90px;
-  font-family: 'Young Serif', serif;
-  
+  font-family: 'Young Serif', serif;  
 }
-
 
 body {
   overflow-x: hidden;
@@ -26,7 +24,6 @@ body {
   color: yellow !important;  /* Define a cor do texto como branco */
   background: none !important; /* Remove a imagem de fundo no modo escuro */
 }
-
 
 button{
   transition: 0.5s; 
