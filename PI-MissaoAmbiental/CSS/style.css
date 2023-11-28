@@ -346,3 +346,7 @@ ul.suporte{
 .mapa_nav{
   padding-left: 0px;  
 }
+
+section img {
+  border-radius: 20%;
+}
