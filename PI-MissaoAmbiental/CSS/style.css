@@ -48,19 +48,7 @@ article {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-@media screen and (max-width: 400px) {
-  .text-overlay{
-    font-size: 0.7rem;
-  }
 
-  .seletor{
-    flex-direction: column;
-  }
-
-  .seletor li{
-    padding: 10px;
-  }
-}
 
 footer{
   padding: 10px;
@@ -190,6 +178,7 @@ header a:hover{
 ul.mapa{
   padding: 0;
 }
+
 ul.suporte{
   padding: 0;
   padding-left: 50px;
@@ -229,51 +218,50 @@ ul.suporte{
   align-items:center;
   justify-content: center;
   padding: 20px;
-  padding-bottom: 50px;
-  padding-top: 150px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin: 0px;
 }
 .seletor li{
   align-items: center;
   justify-content: center;
   padding: 30px;
-
 }
 
 #compostagem-comunitaria{
-  padding-top: 110px;
+  padding-top: 40px;
 }
 
 #compostagem-comunitaria p{
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 
 #especies-nativas{
   text-align: center;
-  padding-top: 110px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #especies-nativas p{
   text-align: center;
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #projetos-interbairros{
-  padding-top: 110px;
+  padding-top: 50px;
 }
-
 
 #nativas{
   padding: 20px;
   align-items: center;
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button-veja_mais{
@@ -283,12 +271,6 @@ ul.suporte{
 
 #nativas-i{
   padding: 10px;
-}
-
-@media screen and (min-width: 1440px) {
-  #nativas{
-    display: flex;
-  }
 }
 
 #compostagem{
@@ -359,7 +341,7 @@ ul.suporte{
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 10px;
+  padding: 40px;
 }
 
 .iframe-container{
@@ -379,4 +361,25 @@ ul.suporte{
 
 section img {
   border-radius: 20%;
+}
+
+
+@media screen and (min-width: 1440px) {
+  #nativas{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-overlay{
+    font-size: 0.7rem;
+  }
+
+  .seletor{
+    flex-direction: column;
+  }
+
+  .seletor li{
+    padding: 10px;
+  }
 }
