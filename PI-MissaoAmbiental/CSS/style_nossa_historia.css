@@ -100,8 +100,8 @@ ul.suporte, ul.redes_sociais{
   padding: 20px;
   flex: 1; 
   padding: 10px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-top: 50px;
   margin-top: 50px;
   text-align: center;
@@ -172,7 +172,6 @@ ul.suporte, ul.redes_sociais{
   background-color: white;
 }
 
-
 .dark header a{
   background-color: black;
   color: yellow; 
@@ -203,8 +202,6 @@ ul.suporte, ul.redes_sociais{
   background-color: black; /* Cor de fundo no modo escuro */
   color: yellow; /* Cor do texto no modo escuro */
 }
-
-
 
 .checkbox {
   opacity: 0;
