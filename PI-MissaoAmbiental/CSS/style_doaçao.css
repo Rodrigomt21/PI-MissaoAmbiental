@@ -26,27 +26,6 @@ body.dark {
   background-image: none;
 }
 
-
-.conteudo{
-  text-align: center;
-}
-
-.conteudo h3 {
-  font-size: 40px;
-  font-weight: 700;
-  margin: 10px;
-  padding: 10px;
-  color: #000000;
-}
-
-.conteudo p {
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Poppins';
-  color: #000000;
-}
-
 .custom-menu-2{
   background-color: rgba(245, 245, 245, 0.88); 
   border-radius: 20px; 
@@ -92,6 +71,7 @@ header a:hover{
 .custom-menu{
   background-color: white;
 }
+
 footer{
   padding: 30px;
   background-color: beige;
@@ -110,12 +90,10 @@ footer a:hover{
   cursor: pointer; 
 }
 
-
 body.dark footer{
   background-color: black;
   color: yellow;
 }
-
 
 .dark footer button{
   color: yellow;
@@ -149,10 +127,9 @@ body.dark footer{
   color: white;
 }
 
-/* Estilo para o modo escuro */
 .dark .custom-menu {
-  background-color: black; /* Cor de fundo no modo escuro */
-  color: yellow; /* Cor do texto no modo escuro */
+  background-color: black; 
+  color: yellow;
 }
 
 ul.suporte, ul.redes_sociais{

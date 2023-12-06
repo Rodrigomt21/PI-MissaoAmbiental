@@ -35,7 +35,7 @@ main{
   padding-top: 135px;
 }
 
-.container {
+.custom-container1 {
   position: relative;
   width: 1200px;
   min-height: 850px;
@@ -47,7 +47,7 @@ main{
   background-color: rgb(4, 45, 4);
 }
 
-.dark .container{
+.dark .custom-container1{
   color: yellow;
   background-color: black;
 }
