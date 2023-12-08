@@ -771,7 +771,7 @@ main{
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1340px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -835,6 +835,48 @@ main{
 
 
 @media screen and (max-width: 430px) {
+  .calendar .month {
+    height: 60px;
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+  .calendar .weekdays {
+    height: 40px;
+    font-size: 0.4rem; /* Adjust font size for better readability */
+  }
+  .calendar .days .day {
+    height: 30px;
+    font-size: 0.7rem;
+    line-height: 1.1; /* Adjust line height for better readability */
+  }
+  .right .today-date {
+    padding: 15px;
+    font-size: 0.8rem; /* Adjust font size for better readability */
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .calendar .month {
+    height: 60px;
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+  .calendar .weekdays {
+    height: 40px;
+    font-size: 0.6rem; /* Adjust font size for better readability */
+  }
+  .calendar .days .day {
+    height: 30px;
+    font-size: 0.7rem;
+    line-height: 1.1; /* Adjust line height for better readability */
+  }
+  .right .today-date {
+    padding: 15px;
+    font-size: 0.8rem; /* Adjust font size for better readability */
+  }
+}
+
+
+@media screen and (max-width: 370px) {
   .calendar .month {
     height: 60px;
     font-size: 0.9rem; /* Adjust font size for better readability */
