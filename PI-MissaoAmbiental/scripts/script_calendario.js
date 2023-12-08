@@ -17,6 +17,8 @@ const calendar = document.querySelector(".calendar"),
   addEventTo = document.querySelector(".event-time-to "),
   addEventSubmit = document.querySelector(".add-event-btn ");
 
+  const senha = "MISSÃOAMBIENTAL11";
+
   const diasEmPortugues = {
   "Sun": "Domingo",
   "Mon": "Segunda",
@@ -257,11 +259,12 @@ function getActiveDay(diaAtual) {
 }
 
 //function update events when a day is active
+//function update events when a day is active
 function updateEvents(date) {
   let events = "";
   eventsArr.forEach((event) => {
     if (
-      diaAtual === event.day &&
+      date === event.day &&
       month + 1 === event.month &&
       year === event.year
     ) {
@@ -287,9 +290,18 @@ function updateEvents(date) {
   saveEvents();
 }
 
+
 //function to add event
 addEventBtn.addEventListener("click", () => {
-  addEventWrapper.classList.toggle("active");
+  // Solicitar a senha com uma descrição
+  const senhaDigitada = prompt("Digite a senha para adicionar eventos (Apenas donos do site podem adicionar eventos):");
+
+  // Verificar se a senha digitada está correta
+  if (senhaDigitada === senha) {
+    addEventWrapper.classList.toggle("active");
+  } else {
+    alert("Senha incorreta. Acesso negado.");
+  }
 });
 
 addEventCloseBtn.addEventListener("click", () => {
@@ -420,7 +432,9 @@ addEventSubmit.addEventListener("click", () => {
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
-    if (confirm("Tem certeza de que deseja excluir este evento?")) {
+    const senhaDigitada = prompt("Digite a senha para remover evento (Apenas donos do site podem remover eventos):");
+
+    if (senhaDigitada === senha) {
       const eventTitle = e.target.children[0].children[1].innerHTML;
       eventsArr.forEach((event) => {
         if (
@@ -433,10 +447,8 @@ eventsContainer.addEventListener("click", (e) => {
               event.events.splice(index, 1);
             }
           });
-          //if no events left in a day then remove that day from eventsArr
           if (event.events.length === 0) {
             eventsArr.splice(eventsArr.indexOf(event), 1);
-            //remove event class from day
             const activeDayEl = document.querySelector(".day.active");
             if (activeDayEl.classList.contains("event")) {
               activeDayEl.classList.remove("event");
@@ -445,9 +457,12 @@ eventsContainer.addEventListener("click", (e) => {
         }
       });
       updateEvents(activeDay);
+    } else {
+      alert("Senha incorreta. Exclusão negada.");
     }
   }
 });
+
 
 //function to save events in local storage
 function saveEvents() {
