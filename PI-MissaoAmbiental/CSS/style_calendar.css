@@ -226,8 +226,6 @@ main{
   color: black;
 }
 
-
-
 .calendar .days .prev-date,
 .calendar .days .next-date {
   color: #b3b3b3;
@@ -773,7 +771,7 @@ main{
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -810,7 +808,7 @@ main{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
   .calendar .month {
     height: 75px;
@@ -835,7 +833,8 @@ main{
   }
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 430px) {
   .calendar .month {
     height: 60px;
     font-size: 0.9rem; /* Adjust font size for better readability */
