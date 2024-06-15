@@ -35,13 +35,11 @@ function openModal(date){
   backDrop.style.display = 'block'
 }
 
-//função load() será chamada quando a pagina carregar:
 
 function load (){ 
   const date = new Date() 
   
 
-  //mudar titulo do mês:
   if(nav !== 0){
     date.setMonth(new Date().getMonth() + nav) 
   }
@@ -66,22 +64,18 @@ function load (){
 
   const paddinDays = weekdays.indexOf(dateString.split(', ') [0])
   
-  //mostrar mês e ano:
   document.getElementById('monthDisplay').innerText = `${date.toLocaleDateString('pt-br',{month: 'long'})}, ${year}`
 
   
   calendar.innerHTML =''
 
-  // criando uma div com os dias:
 
   for (let i = 1; i <= paddinDays + daysMonth; i++) {
     const dayS = document.createElement('div')
     dayS.classList.add('day')
 
     const dayString = `${month + 1}/${i - paddinDays}/${year}`
-
-    //condicional para criar os dias de um mês:
-     
+   
     if (i > paddinDays) {
       dayS.innerText = i - paddinDays
       
@@ -146,8 +140,6 @@ function deleteEvent(){
   localStorage.setItem('events', JSON.stringify(events))
   closeModal()
 }
-
-// botões 
 
 function buttons (){
   document.getElementById('backButton').addEventListener('click', ()=>{
